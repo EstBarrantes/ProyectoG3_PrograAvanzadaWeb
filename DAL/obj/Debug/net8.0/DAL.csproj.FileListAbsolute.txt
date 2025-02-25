@@ -1,0 +1,15 @@
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\bin\Debug\net8.0\DAL.deps.json
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\bin\Debug\net8.0\DAL.dll
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\bin\Debug\net8.0\DAL.pdb
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\bin\Debug\net8.0\Entities.dll
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\bin\Debug\net8.0\Entities.pdb
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\obj\Debug\net8.0\DAL.dll
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\obj\Debug\net8.0\refint\DAL.dll
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\obj\Debug\net8.0\DAL.pdb
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\obj\Debug\net8.0\ref\DAL.dll
