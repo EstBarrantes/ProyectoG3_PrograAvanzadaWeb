@@ -1,7 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\entities\\bd\\bd_g3_prograavanzada.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|solutionrelative:entities\\bd\\bd_g3_prograavanzada.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\entities\\bd\\bd_g3_prograavanzada.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|solutionrelative:entities\\bd\\bd_g3_prograavanzada.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,83 +18,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BD_G3_PrograAvanzada.sql ",
+              "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\Entities\\BD\\BD_G3_PrograAvanzada.sql",
+              "RelativeDocumentMoniker": "Entities\\BD\\BD_G3_PrograAvanzada.sql",
+              "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\Entities\\BD\\BD_G3_PrograAvanzada.sql",
+              "RelativeToolTip": "Entities\\BD\\BD_G3_PrograAvanzada.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-01T04:43:11.625Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:15:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:18:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:19:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:20:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:21:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:22:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:23:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:24:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:25:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:26:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:27:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:28:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:16:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:17:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
             },
             {
               "$type": "Bookmark",
@@ -93,19 +42,15 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:15:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+              "Name": "ST:0:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             }
           ]
         },
@@ -116,6 +61,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }
