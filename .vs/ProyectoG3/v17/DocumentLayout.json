@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\entities\\bd\\bd_g3_prograavanzada.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|solutionrelative:entities\\bd\\bd_g3_prograavanzada.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\entities\\bd\\bd_g3_prograavanzada.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|solutionrelative:entities\\bd\\bd_g3_prograavanzada.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,20 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BD_G3_PrograAvanzada.sql ",
-              "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\Entities\\BD\\BD_G3_PrograAvanzada.sql",
-              "RelativeDocumentMoniker": "Entities\\BD\\BD_G3_PrograAvanzada.sql",
-              "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\Entities\\BD\\BD_G3_PrograAvanzada.sql",
-              "RelativeToolTip": "Entities\\BD\\BD_G3_PrograAvanzada.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-03-01T04:43:11.625Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"

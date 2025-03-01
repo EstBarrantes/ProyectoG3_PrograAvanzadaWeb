@@ -21,7 +21,6 @@ namespace BackEnd.Services.implementations
             {
                 RolId = rol.RolId,
                 NombreRol = rol.NombreRol,
-                Descripcion = rol.Descripcion,
                 Usuarios = rol.Usuarios,
             };
         }
@@ -31,7 +30,6 @@ namespace BackEnd.Services.implementations
             {
                 RolId = rol.RolId,
                 NombreRol = rol.NombreRol,
-                Descripcion = rol.Descripcion,
                 Usuarios = rol.Usuarios,
             };
         }

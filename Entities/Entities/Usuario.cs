@@ -17,11 +17,13 @@ public partial class Usuario
 
     public int RolId { get; set; }
 
-    public DateTime? FechaRegistro { get; set; }
+    public DateTime FechaRegistro { get; set; }
 
-    public bool? Activo { get; set; }
+    public bool Activo { get; set; }
 
-    public virtual ICollection<Carrito> Carritos { get; set; } = new List<Carrito>();
+    public string? Direccion { get; set; }
+
+    public string? Telefono { get; set; }
 
     public virtual ICollection<Factura> Facturas { get; set; } = new List<Factura>();
 

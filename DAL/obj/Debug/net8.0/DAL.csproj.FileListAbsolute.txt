@@ -13,3 +13,15 @@ D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\obj\Debug\n
 D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\obj\Debug\net8.0\refint\DAL.dll
 D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\obj\Debug\net8.0\DAL.pdb
 D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\obj\Debug\net8.0\DAL.sourcelink.json
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\obj\Debug\net8.0\ref\DAL.dll

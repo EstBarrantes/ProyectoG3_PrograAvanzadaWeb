@@ -14,10 +14,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 #region DI
-builder.Services.AddDbContext<ProyectoContext>();
+builder.Services.AddDbContext<G3prograavanzadaContext>();
 builder.Services.AddScoped<IUnidadDeTrabajo, UnidadDeTrabajo>();
 builder.Services.AddScoped<IRolDAL, RolDAL>();
 builder.Services.AddScoped<IRolService, RolService>();
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 #endregion
 
 

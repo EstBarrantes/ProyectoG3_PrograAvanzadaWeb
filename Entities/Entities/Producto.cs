@@ -13,13 +13,17 @@ public partial class Producto
 
     public decimal Precio { get; set; }
 
-    public int Stock { get; set; }
+    public int CategoriaId { get; set; }
 
-    public string? Categoria { get; set; }
+    public string? ImagenUrl { get; set; }
 
-    public DateTime? FechaAgregado { get; set; }
+    public DateTime FechaAgregado { get; set; }
 
-    public virtual ICollection<Carrito> Carritos { get; set; } = new List<Carrito>();
+    public decimal? Descuento { get; set; }
+
+    public virtual Categorium Categoria { get; set; } = null!;
 
     public virtual ICollection<DetalleFactura> DetalleFacturas { get; set; } = new List<DetalleFactura>();
+
+    public virtual ICollection<Inventario> Inventarios { get; set; } = new List<Inventario>();
 }

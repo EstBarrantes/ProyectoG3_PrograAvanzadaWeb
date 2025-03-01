@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace DAL.Implementations
 {
-    public class RolDAL : DALGenericoImpl<Rol>, IRolDAL
+    public class CategoriaDAL : DALGenericoImpl<Categorium>, ICategoriaDAL
     {
         private G3prograavanzadaContext _context;
-        public RolDAL (G3prograavanzadaContext context) : base(context)
+        public CategoriaDAL (G3prograavanzadaContext context) : base(context)
         {
             _context = context;
         }

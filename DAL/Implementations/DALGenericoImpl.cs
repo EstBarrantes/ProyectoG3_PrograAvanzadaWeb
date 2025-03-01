@@ -12,9 +12,9 @@ namespace DAL.Implementations
     public class DALGenericoImpl<TEntity> : IDALGenerico<TEntity> where TEntity : class
     {
 
-        private ProyectoContext _ProyectoContext;
+        private G3prograavanzadaContext _ProyectoContext;
 
-        public DALGenericoImpl(ProyectoContext ProyectoContext)
+        public DALGenericoImpl(G3prograavanzadaContext ProyectoContext)
         {
             
             _ProyectoContext = ProyectoContext;

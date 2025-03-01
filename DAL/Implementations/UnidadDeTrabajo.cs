@@ -12,15 +12,17 @@ namespace DAL.Implementations
     public class UnidadDeTrabajo : IUnidadDeTrabajo
     {
         public IRolDAL RolDAL { get; set; }
+        public ICategoriaDAL CategoriaDAL { get; set; }
 
-        private ProyectoContext _proyectoContext;
+        private G3prograavanzadaContext _proyectoContext;
 
-        public UnidadDeTrabajo(ProyectoContext proyectoContext,
-                        IRolDAL rolDAL) 
+        public UnidadDeTrabajo(G3prograavanzadaContext proyectoContext,
+                        IRolDAL rolDAL,
+                        ICategoriaDAL categoriaDAL)
         {
             this._proyectoContext = proyectoContext;
             this.RolDAL = rolDAL;
-                
+            CategoriaDAL = categoriaDAL;
         }
 
 
