@@ -25,3 +25,7 @@ C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\Pr
 C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\bin\Debug\net8.0\DAL.dll
 C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\bin\Debug\net8.0\DAL.pdb
 C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\bin\Debug\net8.0\Entities.dll
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\bin\Debug\net8.0\Entities.pdb
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
