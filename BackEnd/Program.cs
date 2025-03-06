@@ -18,6 +18,7 @@ builder.Services.AddDbContext<G3prograavanzadaContext>();
 builder.Services.AddScoped<IUnidadDeTrabajo, UnidadDeTrabajo>();
 builder.Services.AddScoped<IRolDAL, RolDAL>();
 builder.Services.AddScoped<IRolService, RolService>();
+builder.Services.AddScoped<ICategoriaDAL, CategoriaDAL>();
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 #endregion
 

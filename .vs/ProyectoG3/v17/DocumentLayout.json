@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\backend\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,12 +31,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\Program.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Program.cs",
+              "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\Program.cs",
+              "RelativeToolTip": "BackEnd\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T05:07:16.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CategoriaController.cs",
               "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\Controllers\\CategoriaController.cs",
               "RelativeDocumentMoniker": "BackEnd\\Controllers\\CategoriaController.cs",
               "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\Controllers\\CategoriaController.cs",
               "RelativeToolTip": "BackEnd\\Controllers\\CategoriaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T05:03:50.952Z",
               "EditorCaption": ""
@@ -59,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UnidadDeTrabajo.cs",
               "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\DAL\\Implementations\\UnidadDeTrabajo.cs",
               "RelativeDocumentMoniker": "DAL\\Implementations\\UnidadDeTrabajo.cs",
@@ -72,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CategoriaDTO.cs",
               "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\DTO\\CategoriaDTO.cs",
               "RelativeDocumentMoniker": "BackEnd\\DTO\\CategoriaDTO.cs",
