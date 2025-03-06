@@ -22,7 +22,7 @@ namespace DAL.Implementations
         {
             this._proyectoContext = proyectoContext;
             this.RolDAL = rolDAL;
-            CategoriaDAL = categoriaDAL;
+            this.CategoriaDAL = categoriaDAL;
         }
 
 
