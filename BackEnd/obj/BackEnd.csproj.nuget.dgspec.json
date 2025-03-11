@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\BackEnd.csproj": {}
+    "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\BackEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\BackEnd.csproj": {
+    "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\BackEnd.csproj",
+        "projectUniqueName": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\BackEnd.csproj",
-        "packagesPath": "C:\\Users\\campo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\obj\\",
+        "projectPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\BackEnd.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\campo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\DAL\\DAL.csproj"
+              "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\DAL.csproj"
               }
             }
           }
@@ -47,8 +48,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -78,24 +78,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\DAL\\DAL.csproj": {
+    "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\campo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\DAL\\obj\\",
+        "projectPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\campo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -104,14 +104,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\Entities\\Entities.csproj"
+              "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities.csproj"
               }
             }
           }
@@ -125,8 +126,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -147,24 +147,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\Entities\\Entities.csproj": {
+    "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\campo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\campo\\OneDrive - Universidad Fidélitas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\Entities\\obj\\",
+        "projectPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\campo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -173,6 +173,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -190,8 +191,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -228,7 +228,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

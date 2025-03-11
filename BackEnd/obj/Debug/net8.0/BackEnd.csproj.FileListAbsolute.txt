@@ -165,3 +165,4 @@ C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\Pr
 C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\BackEnd\bin\Debug\net8.0\Entities.dll
 C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\BackEnd\bin\Debug\net8.0\DAL.pdb
 C:\Users\campo\OneDrive - Universidad Fidélitas\VI Cuatri\Progra Avanzada II\ProyectoG3_PrograAvanzadaWeb\BackEnd\bin\Debug\net8.0\Entities.pdb
+D:\Progra Avanzada Web\ProyectoG3-Progra_Avanzada_Web\ProyectoG3\BackEnd\obj\Debug\net8.0\BackEnd.sourcelink.json

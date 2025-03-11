@@ -21,7 +21,6 @@ namespace BackEnd.Services.implementations
             {
                 RolId = rol.RolId,
                 NombreRol = rol.NombreRol,
-                Usuarios = rol.Usuarios,
             };
         }
         RolDTO ConvertirDTO(Rol rol)
@@ -30,7 +29,6 @@ namespace BackEnd.Services.implementations
             {
                 RolId = rol.RolId,
                 NombreRol = rol.NombreRol,
-                Usuarios = rol.Usuarios,
             };
         }
 
