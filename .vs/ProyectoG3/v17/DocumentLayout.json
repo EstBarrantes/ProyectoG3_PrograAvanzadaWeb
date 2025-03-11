@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\controllers\\rolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\controllers\\rolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\services\\interfaces\\irolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\services\\interfaces\\irolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\services\\implementations\\rolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\services\\implementations\\rolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\services\\interfaces\\irolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\services\\interfaces\\irolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\dto\\roldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -131,19 +127,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RolController.cs",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Controllers\\RolController.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Controllers\\RolController.cs",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Controllers\\RolController.cs",
-              "RelativeToolTip": "BackEnd\\Controllers\\RolController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T21:52:52.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "IRolService.cs",
               "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Services\\Interfaces\\IRolService.cs",
               "RelativeDocumentMoniker": "BackEnd\\Services\\Interfaces\\IRolService.cs",
@@ -169,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Rol.cs",
               "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities\\Rol.cs",
               "RelativeDocumentMoniker": "Entities\\Entities\\Rol.cs",
@@ -182,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "RolDTO.cs",
               "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\DTO\\RolDTO.cs",
               "RelativeDocumentMoniker": "BackEnd\\DTO\\RolDTO.cs",

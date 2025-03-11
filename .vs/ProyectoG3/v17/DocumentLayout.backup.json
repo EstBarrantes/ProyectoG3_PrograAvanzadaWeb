@@ -3,44 +3,24 @@
   "WorkspaceRootPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\entities\\bd\\inserts.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|solutionrelative:entities\\bd\\inserts.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\controllers\\rolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\controllers\\rolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\entities\\bd\\bdproyectog3.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|solutionrelative:entities\\bd\\bdproyectog3.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\services\\implementations\\rolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\services\\implementations\\rolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\entities\\entities\\g3prograavanzadacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\g3prograavanzadacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\services\\interfaces\\irolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\services\\interfaces\\irolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\dto\\roldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\dto\\roldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C0EA74-68CB-4250-BA81-BE3B118E8A1F}|DAL\\DAL.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\dal\\implementations\\unidaddetrabajo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C0EA74-68CB-4250-BA81-BE3B118E8A1F}|DAL\\DAL.csproj|solutionrelative:dal\\implementations\\unidaddetrabajo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\dto\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\dto\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\entities\\bd\\bdproyectog3.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|solutionrelative:entities\\bd\\bdproyectog3.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\entities\\bd\\inserts.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|solutionrelative:entities\\bd\\inserts.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\entities\\entities\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E02C243-6B77-422D-A757-5EDBDCBC12B8}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,20 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 24,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Inserts.sql ",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\BD\\Inserts.sql",
-              "RelativeDocumentMoniker": "Entities\\BD\\Inserts.sql",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\BD\\Inserts.sql",
-              "RelativeToolTip": "Entities\\BD\\Inserts.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-03-11T21:49:50.309Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
@@ -162,90 +130,68 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RolController.cs",
+              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Controllers\\RolController.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Controllers\\RolController.cs",
+              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Controllers\\RolController.cs",
+              "RelativeToolTip": "BackEnd\\Controllers\\RolController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:52:52.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRolService.cs",
+              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Services\\Interfaces\\IRolService.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Services\\Interfaces\\IRolService.cs",
+              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Services\\Interfaces\\IRolService.cs",
+              "RelativeToolTip": "BackEnd\\Services\\Interfaces\\IRolService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:52:46.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RolService.cs",
+              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Services\\Implementations\\RolService.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Services\\Implementations\\RolService.cs",
+              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Services\\Implementations\\RolService.cs",
+              "RelativeToolTip": "BackEnd\\Services\\Implementations\\RolService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:52:31.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Rol.cs",
+              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities\\Rol.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Rol.cs",
+              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities\\Rol.cs",
+              "RelativeToolTip": "Entities\\Entities\\Rol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:50:48.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "RolDTO.cs",
               "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\DTO\\RolDTO.cs",
               "RelativeDocumentMoniker": "BackEnd\\DTO\\RolDTO.cs",
               "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\DTO\\RolDTO.cs",
               "RelativeToolTip": "BackEnd\\DTO\\RolDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T21:44:32.401Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "G3prograavanzadaContext.cs",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities\\G3prograavanzadaContext.cs",
-              "RelativeDocumentMoniker": "Entities\\Entities\\G3prograavanzadaContext.cs",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities\\G3prograavanzadaContext.cs",
-              "RelativeToolTip": "Entities\\Entities\\G3prograavanzadaContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T21:40:44.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BDProyectoG3.sql ",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\BD\\BDProyectoG3.sql",
-              "RelativeDocumentMoniker": "Entities\\BD\\BDProyectoG3.sql",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\BD\\BDProyectoG3.sql",
-              "RelativeToolTip": "Entities\\BD\\BDProyectoG3.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-03-11T21:37:46.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Program.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Program.cs",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Program.cs",
-              "RelativeToolTip": "BackEnd\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T05:07:16.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CategoriaController.cs",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Controllers\\CategoriaController.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Controllers\\CategoriaController.cs",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Controllers\\CategoriaController.cs",
-              "RelativeToolTip": "BackEnd\\Controllers\\CategoriaController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwB0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T05:03:50.952Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UnidadDeTrabajo.cs",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\Implementations\\UnidadDeTrabajo.cs",
-              "RelativeDocumentMoniker": "DAL\\Implementations\\UnidadDeTrabajo.cs",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\Implementations\\UnidadDeTrabajo.cs",
-              "RelativeToolTip": "DAL\\Implementations\\UnidadDeTrabajo.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T05:03:26.184Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CategoriaDTO.cs",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\DTO\\CategoriaDTO.cs",
-              "RelativeDocumentMoniker": "BackEnd\\DTO\\CategoriaDTO.cs",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\DTO\\CategoriaDTO.cs",
-              "RelativeToolTip": "BackEnd\\DTO\\CategoriaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T05:02:08.587Z"
             }
           ]
         },
