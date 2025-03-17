@@ -3,6 +3,7 @@ using BackEnd.Services.Interfaces;
 using DAL.Implementations;
 using DAL.Interfaces;
 using Entities.Entities;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +15,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 #region DI
-builder.Services.AddDbContext<G3prograavanzadaContext>();
+
+
+builder.Services.AddDbContext<G3prograavanzadaContext>(optionsAction =>
+                    optionsAction
+                    .UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+
+    );
+
+
 builder.Services.AddScoped<IUnidadDeTrabajo, UnidadDeTrabajo>();
 builder.Services.AddScoped<IRolDAL, RolDAL>();
 builder.Services.AddScoped<IRolService, RolService>();
@@ -31,7 +40,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseMiddleware<ApiKeyMiddleware>();
 app.UseAuthorization();
 
 app.MapControllers();
