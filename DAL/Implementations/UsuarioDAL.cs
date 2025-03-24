@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Implementations
 {
-    internal class UsuarioDAL : DALGenericoImpl<Usuario>, IUsuarioDAL
+    public class UsuarioDAL : DALGenericoImpl<Usuario>, IUsuarioDAL
     {
         private G3prograavanzadaContext _context;
     public UsuarioDAL(G3prograavanzadaContext context) : base(context)

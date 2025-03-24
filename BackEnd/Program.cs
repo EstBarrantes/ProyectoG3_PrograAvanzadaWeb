@@ -31,7 +31,7 @@ builder.Services.AddScoped<IRolDAL, RolDAL>();
 builder.Services.AddScoped<IRolService, RolService>();
 builder.Services.AddScoped<ICategoriaDAL, CategoriaDAL>();
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
-builder.Services.AddScoped<IUsuarioDAL, IUsuarioDAL>();//esto tiene error 
+builder.Services.AddScoped<IUsuarioDAL, UsuarioDAL>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 #endregion
 
