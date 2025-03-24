@@ -1,4 +1,6 @@
+using BackEnd.DTO;
 using BackEnd.Services.implementations;
+using BackEnd.Services.Implementations;
 using BackEnd.Services.Interfaces;
 using DAL.Implementations;
 using DAL.Interfaces;
@@ -29,10 +31,12 @@ builder.Services.AddScoped<IRolDAL, RolDAL>();
 builder.Services.AddScoped<IRolService, RolService>();
 builder.Services.AddScoped<ICategoriaDAL, CategoriaDAL>();
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+builder.Services.AddScoped<IUsuarioDAL, IUsuarioDAL>();//esto tiene error 
+builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 #endregion
 
 
-var app = builder.Build();
+var app = builder.Build();// hasta aqui me indica error
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

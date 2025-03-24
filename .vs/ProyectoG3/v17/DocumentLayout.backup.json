@@ -1,50 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\",
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\frontend\\helpers\\implementations\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\helpers\\implementations\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|c:\\users\\usuario\\desktop\\p\\proyectog3_prograavanzadaweb\\frontend\\views\\usuario\\listadodeusuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\usuario\\listadodeusuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\frontend\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\AppData\\Local\\SourceServer\\2a2de121a5c8ca063801c6457c42a73c8eb9c3b6e3dd3af9add5113a0455daa5\\BackEnd\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\frontend\\helpers\\implementations\\categoryhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\helpers\\implementations\\categoryhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\frontend\\apimodels\\categoryapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\apimodels\\categoryapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\frontend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\frontend\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\frontend\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\frontend\\views\\category\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\category\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\frontend\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|c:\\users\\campo\\onedrive - universidad fid\u00E9litas\\vi cuatri\\progra avanzada ii\\proyectog3_prograavanzadaweb\\frontend\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|c:\\users\\usuario\\desktop\\p\\proyectog3_prograavanzadaweb\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,184 +21,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ServiceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Helpers\\Implementations\\ServiceRepository.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\Helpers\\Implementations\\ServiceRepository.cs",
-              "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Helpers\\Implementations\\ServiceRepository.cs",
-              "RelativeToolTip": "FrontEnd\\Helpers\\Implementations\\ServiceRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T01:20:00.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:14:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:15:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Program.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\Program.cs",
-              "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Program.cs",
-              "RelativeToolTip": "FrontEnd\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA+AAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\Program.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\Program.cs",
+              "RelativeToolTip": "BackEnd\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T01:15:05.427Z",
+              "WhenOpened": "2025-03-23T22:14:20.947Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "FrontEnd\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\AppData\\Local\\SourceServer\\2a2de121a5c8ca063801c6457c42a73c8eb9c3b6e3dd3af9add5113a0455daa5\\BackEnd\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\2a2de121a5c8ca063801c6457c42a73c8eb9c3b6e3dd3af9add5113a0455daa5\\BackEnd\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\AppData\\Local\\SourceServer\\2a2de121a5c8ca063801c6457c42a73c8eb9c3b6e3dd3af9add5113a0455daa5\\BackEnd\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\2a2de121a5c8ca063801c6457c42a73c8eb9c3b6e3dd3af9add5113a0455daa5\\BackEnd\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T01:14:57.764Z",
+              "WhenOpened": "2025-03-23T22:18:13.697Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryHelper.cs",
-              "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Helpers\\Implementations\\CategoryHelper.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\Helpers\\Implementations\\CategoryHelper.cs",
-              "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Helpers\\Implementations\\CategoryHelper.cs",
-              "RelativeToolTip": "FrontEnd\\Helpers\\Implementations\\CategoryHelper.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAvwD8AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T01:14:40.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "FrontEnd\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "FrontEnd\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABNAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ListadoDeUsuarios.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Views\\Usuario\\ListadoDeUsuarios.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd\\Views\\Usuario\\ListadoDeUsuarios.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Views\\Usuario\\ListadoDeUsuarios.cshtml",
+              "RelativeToolTip": "FrontEnd\\Views\\Usuario\\ListadoDeUsuarios.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T01:13:42.64Z",
+              "WhenOpened": "2025-03-24T01:04:04.707Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Views\\Category\\Edit.cshtml",
-              "RelativeDocumentMoniker": "FrontEnd\\Views\\Category\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Views\\Category\\Edit.cshtml",
-              "RelativeToolTip": "FrontEnd\\Views\\Category\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T01:08:22.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Views\\Category\\Delete.cshtml",
-              "RelativeDocumentMoniker": "FrontEnd\\Views\\Category\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Views\\Category\\Delete.cshtml",
-              "RelativeToolTip": "FrontEnd\\Views\\Category\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T01:07:40.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Views\\Category\\Index.cshtml",
-              "RelativeDocumentMoniker": "FrontEnd\\Views\\Category\\Index.cshtml",
-              "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Views\\Category\\Index.cshtml",
-              "RelativeToolTip": "FrontEnd\\Views\\Category\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T01:07:02.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Views\\Category\\Details.cshtml",
-              "RelativeDocumentMoniker": "FrontEnd\\Views\\Category\\Details.cshtml",
-              "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Views\\Category\\Details.cshtml",
-              "RelativeToolTip": "FrontEnd\\Views\\Category\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T01:06:42.1Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Views\\Category\\Create.cshtml",
-              "RelativeDocumentMoniker": "FrontEnd\\Views\\Category\\Create.cshtml",
-              "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\Views\\Category\\Create.cshtml",
-              "RelativeToolTip": "FrontEnd\\Views\\Category\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T00:55:31.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CategoryAPI.cs",
-              "DocumentMoniker": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\ApiModels\\CategoryAPI.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\ApiModels\\CategoryAPI.cs",
-              "ToolTip": "C:\\Users\\campo\\OneDrive - Universidad Fid\u00E9litas\\VI Cuatri\\Progra Avanzada II\\ProyectoG3_PrograAvanzadaWeb\\FrontEnd\\ApiModels\\CategoryAPI.cs",
-              "RelativeToolTip": "FrontEnd\\ApiModels\\CategoryAPI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T00:04:36.136Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",

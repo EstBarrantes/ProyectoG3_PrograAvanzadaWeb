@@ -10,7 +10,8 @@ namespace DAL.Interfaces
     {
         IRolDAL RolDAL { get; }
         ICategoriaDAL CategoriaDAL { get; }
-
+       
+        IUsuarioDAL UsuarioDAL { get; }
 
         bool Complete();
     }
