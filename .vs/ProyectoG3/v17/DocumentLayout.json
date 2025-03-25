@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C0EA74-68CB-4250-BA81-BE3B118E8A1F}|DAL\\DAL.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\dal\\implementations\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C0EA74-68CB-4250-BA81-BE3B118E8A1F}|DAL\\DAL.csproj|solutionrelative:dal\\implementations\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C0EA74-68CB-4250-BA81-BE3B118E8A1F}|DAL\\DAL.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\dal\\interfaces\\iusuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C0EA74-68CB-4250-BA81-BE3B118E8A1F}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iusuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C0EA74-68CB-4250-BA81-BE3B118E8A1F}|DAL\\DAL.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\dal\\interfaces\\iroldal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C0EA74-68CB-4250-BA81-BE3B118E8A1F}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iroldal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C0EA74-68CB-4250-BA81-BE3B118E8A1F}|DAL\\DAL.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\dal\\interfaces\\iunidaddetrabajo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C0EA74-68CB-4250-BA81-BE3B118E8A1F}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iunidaddetrabajo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\backend\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF229E4-E973-4C6E-9840-572F5269F89C}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,73 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 24,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuarioDAL.cs",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\Implementations\\UsuarioDAL.cs",
-              "RelativeDocumentMoniker": "DAL\\Implementations\\UsuarioDAL.cs",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\Implementations\\UsuarioDAL.cs",
-              "RelativeToolTip": "DAL\\Implementations\\UsuarioDAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T22:02:31.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IUnidadDeTrabajo.cs",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\Interfaces\\IUnidadDeTrabajo.cs",
-              "RelativeDocumentMoniker": "DAL\\Interfaces\\IUnidadDeTrabajo.cs",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\Interfaces\\IUnidadDeTrabajo.cs",
-              "RelativeToolTip": "DAL\\Interfaces\\IUnidadDeTrabajo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T22:02:12.461Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IRolDAL.cs",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\Interfaces\\IRolDAL.cs",
-              "RelativeDocumentMoniker": "DAL\\Interfaces\\IRolDAL.cs",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\Interfaces\\IRolDAL.cs",
-              "RelativeToolTip": "DAL\\Interfaces\\IRolDAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T22:01:46.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IUsuarioDAL.cs",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\Interfaces\\IUsuarioDAL.cs",
-              "RelativeDocumentMoniker": "DAL\\Interfaces\\IUsuarioDAL.cs",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\Interfaces\\IUsuarioDAL.cs",
-              "RelativeToolTip": "DAL\\Interfaces\\IUsuarioDAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T22:01:39.826Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Program.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Program.cs",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Program.cs",
-              "RelativeToolTip": "BackEnd\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T21:51:58.019Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
@@ -203,28 +114,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\appsettings.json",
-              "RelativeDocumentMoniker": "BackEnd\\appsettings.json",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\appsettings.json",
-              "RelativeToolTip": "BackEnd\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-24T21:51:00.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BackEnd.http",
-              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\BackEnd.http",
-              "RelativeDocumentMoniker": "BackEnd\\BackEnd.http",
-              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\BackEnd.http",
-              "RelativeToolTip": "BackEnd\\BackEnd.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-03-24T21:50:59.229Z",
+              "DocumentIndex": 0,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Controllers\\ProductoController.cs",
+              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "BackEnd\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T05:14:21.173Z",
               "EditorCaption": ""
             }
           ]
