@@ -4,7 +4,7 @@ namespace BackEnd.DTO
 {
     public class ProductoDTO
     {
-        public int ProductoId { get; set; }
+        public int? ProductoId { get; set; }
 
         public string Nombre { get; set; } = null!;
 

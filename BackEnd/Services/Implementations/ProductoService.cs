@@ -19,7 +19,7 @@ namespace BackEnd.Services.implementations
         {
             return new Producto
             {
-                ProductoId = producto.ProductoId,
+                ProductoId = producto.ProductoId ?? 0,
                 Nombre = producto.Nombre,
                 Descripcion = producto.Descripcion,
                 Precio = producto.Precio,
@@ -47,8 +47,10 @@ namespace BackEnd.Services.implementations
         public void AddProducto(ProductoDTO producto)
         {
             var productoEntity = Convertir(producto);
-            _unidadDeTrabajo.ProductoDAL.Add(productoEntity);
-            _unidadDeTrabajo.Complete();
+            var des =_unidadDeTrabajo.ProductoDAL.Add(productoEntity); ;
+            var des1 = _unidadDeTrabajo.Complete(); 
+            //_unidadDeTrabajo.ProductoDAL.Add(productoEntity);
+            //_unidadDeTrabajo.Complete();
         }
 
         public void DeleteProducto(int id)

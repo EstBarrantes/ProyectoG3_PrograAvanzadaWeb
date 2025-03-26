@@ -21,7 +21,13 @@ namespace FrontEnd.Controllers
         // GET: ProductoController
         public ActionResult Index()
         {
+            ProductoViewModel producto = new ProductoViewModel();
+            var test = _categoryHelper.GetCategories();
+            producto.Categorias = test;
+
+
             return View(_productoHelper.GetProductos());
+           // return View(_productoHelper.GetProductos());
         }
 
         // GET: ProductoController/Details/5
@@ -38,8 +44,9 @@ namespace FrontEnd.Controllers
         {
             ProductoViewModel producto = new ProductoViewModel();
             //producto.Categorias = _categoryHelper.GetCategories();
-            var test = _categoryHelper.GetCategories();
-            producto.Categorias=test;
+            var cat = _categoryHelper.GetCategories();
+            producto.Categorias= cat;
+
             return View(producto);
         }
 
@@ -50,6 +57,7 @@ namespace FrontEnd.Controllers
         {
             try
             {
+                producto.ProductoId = null;
                 _productoHelper.Add(producto);
                 return RedirectToAction(nameof(Index));
             }
@@ -101,7 +109,7 @@ namespace FrontEnd.Controllers
         {
             try
             {
-                _productoHelper.Delete(producto.ProductoId);
+                _productoHelper.Delete(producto.ProductoId ?? 0);
                 return RedirectToAction(nameof(Index));
             }
             catch

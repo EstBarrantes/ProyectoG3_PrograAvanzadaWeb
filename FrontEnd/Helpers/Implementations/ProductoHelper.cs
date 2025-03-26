@@ -37,7 +37,7 @@ namespace FrontEnd.Helpers.Implementations
                 Nombre = producto.Nombre,
                 Descripcion = producto.Descripcion,
                 Precio = producto.Precio,
-                CategoriaId = producto.CategoriaId,
+                CategoriaId = (int)producto.CategoriaId,
                 ImagenUrl = producto.ImagenUrl,
                 FechaAgregado = producto.FechaAgregado,
                 Descuento = producto.Descuento
@@ -49,7 +49,7 @@ namespace FrontEnd.Helpers.Implementations
 
         public ProductoViewModel Add(ProductoViewModel ViewModel)
         {
-            HttpResponseMessage responseMessage = _ServiceRepository.PostResponse("api/Categoria", Convertir(ViewModel));
+            HttpResponseMessage responseMessage = _ServiceRepository.PostResponse("api/Producto", Convertir(ViewModel));
             if (responseMessage != null)
             {
                 var content = responseMessage.Content;
@@ -60,7 +60,7 @@ namespace FrontEnd.Helpers.Implementations
 
         public void Delete(int id)
         {
-            HttpResponseMessage responseMessage = _ServiceRepository.DeleteResponse("api/Categoria/" + id.ToString());
+            HttpResponseMessage responseMessage = _ServiceRepository.DeleteResponse("api/Producto/" + id.ToString());
             if (responseMessage != null)
             {
                 var content = responseMessage.Content;
@@ -70,7 +70,7 @@ namespace FrontEnd.Helpers.Implementations
         public List<ProductoViewModel> GetProductos()
         {
             List<ProductoAPI> data = new List<ProductoAPI>();
-            HttpResponseMessage responseMessage = _ServiceRepository.GetResponse("api/Categoria");
+            HttpResponseMessage responseMessage = _ServiceRepository.GetResponse("api/Producto");
 
 
             if (responseMessage != null)
@@ -84,7 +84,19 @@ namespace FrontEnd.Helpers.Implementations
             List<ProductoViewModel> list = new List<ProductoViewModel>();
             data.ForEach(x =>
             {
-                list.Add(Convertir(x));
+                var productoViewModel = Convertir(x);
+
+                HttpResponseMessage categoryResponse = _ServiceRepository.GetResponse("api/Categoria/" + productoViewModel.CategoriaId);
+                if (categoryResponse != null)
+                {
+                    var categoryContent = categoryResponse.Content.ReadAsStringAsync().Result;
+                    var category = JsonConvert.DeserializeObject<ProductoViewModel>(categoryContent);
+
+                    productoViewModel.CategoriaNombre = category?.Nombre;
+                }
+
+
+                list.Add(productoViewModel);
             });
             return list;
         }
@@ -93,7 +105,7 @@ namespace FrontEnd.Helpers.Implementations
         {
 
             ProductoAPI data = new ProductoAPI();
-            HttpResponseMessage responseMessage = _ServiceRepository.GetResponse("api/Categoria/" + id.ToString());
+            HttpResponseMessage responseMessage = _ServiceRepository.GetResponse("api/Producto/" + id.ToString());
 
 
             if (responseMessage != null)
@@ -109,7 +121,7 @@ namespace FrontEnd.Helpers.Implementations
 
         public ProductoViewModel Update(ProductoViewModel producto)
         {
-            HttpResponseMessage responseMessage = _ServiceRepository.PutResponse("api/Categoria", Convertir(producto));
+            HttpResponseMessage responseMessage = _ServiceRepository.PutResponse("api/Producto", Convertir(producto));
             if (responseMessage != null)
             {
                 var content = responseMessage.Content;
