@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\producto\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\frontend\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\frontend\\apimodels\\productoapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\apimodels\\productoapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\frontend\\helpers\\interfaces\\iproductohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\helpers\\interfaces\\iproductohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\frontend\\helpers\\implementations\\productohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\helpers\\implementations\\productohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\frontend\\helpers\\interfaces\\iproductohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\helpers\\interfaces\\iproductohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|d:\\progra avanzada web\\proyectog3-progra_avanzada_web\\proyectog3\\frontend\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D18B6A9-7084-414D-89A7-F13B06D5E634}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 27,
+          "SelectedChildIndex": 28,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,39 +130,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "ProductoAPI.cs",
+              "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\FrontEnd\\ApiModels\\ProductoAPI.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\ApiModels\\ProductoAPI.cs",
+              "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\FrontEnd\\ApiModels\\ProductoAPI.cs",
+              "RelativeToolTip": "FrontEnd\\ApiModels\\ProductoAPI.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvxUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T01:21:54.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "IProductoHelper.cs",
               "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\FrontEnd\\Helpers\\Interfaces\\IProductoHelper.cs",
               "RelativeDocumentMoniker": "FrontEnd\\Helpers\\Interfaces\\IProductoHelper.cs",
               "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\FrontEnd\\Helpers\\Interfaces\\IProductoHelper.cs",
               "RelativeToolTip": "FrontEnd\\Helpers\\Interfaces\\IProductoHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T21:30:10.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ProductoHelper.cs",
               "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\FrontEnd\\Helpers\\Implementations\\ProductoHelper.cs",
               "RelativeDocumentMoniker": "FrontEnd\\Helpers\\Implementations\\ProductoHelper.cs",
               "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\FrontEnd\\Helpers\\Implementations\\ProductoHelper.cs",
               "RelativeToolTip": "FrontEnd\\Helpers\\Implementations\\ProductoHelper.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAkwEMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAuwIYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T21:28:11.566Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ProductoController.cs",
               "DocumentMoniker": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\FrontEnd\\Controllers\\ProductoController.cs",
               "RelativeDocumentMoniker": "FrontEnd\\Controllers\\ProductoController.cs",
               "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\FrontEnd\\Controllers\\ProductoController.cs",
               "RelativeToolTip": "FrontEnd\\Controllers\\ProductoController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwGwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAuwHkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T21:16:08.896Z",
               "EditorCaption": ""
@@ -171,7 +188,7 @@
               "RelativeDocumentMoniker": "FrontEnd\\Views\\Producto\\Delete.cshtml",
               "ToolTip": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\FrontEnd\\Views\\Producto\\Delete.cshtml",
               "RelativeToolTip": "FrontEnd\\Views\\Producto\\Delete.cshtml",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEMAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-25T21:15:53.871Z",
               "EditorCaption": ""
