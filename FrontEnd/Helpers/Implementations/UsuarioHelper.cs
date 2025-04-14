@@ -19,7 +19,7 @@ namespace FrontEnd.Helpers.Implementations
         {
             return new UsuarioViewModel
             {
-                UsuarioId = usuario.UsuarioId,
+                UsuarioID = usuario.UsuarioID,
                 Nombre = usuario.Nombre,
                 Apellido = usuario.Apellido,
                 Correo = usuario.Correo,
@@ -36,7 +36,7 @@ namespace FrontEnd.Helpers.Implementations
         {
             return new UsuarioAPI
             {
-                UsuarioId = usuario.UsuarioId,
+                UsuarioID = usuario.UsuarioID,
                 Nombre = usuario.Nombre,
                 Apellido = usuario.Apellido,
                 Correo = usuario.Correo,
@@ -51,67 +51,103 @@ namespace FrontEnd.Helpers.Implementations
 
         public UsuarioViewModel Add(UsuarioViewModel usuario)
         {
-            HttpResponseMessage responseMessage = _ServiceRepository.PostResponse("api/Usuario", Convertir(usuario));
-            if (responseMessage != null)
+            try
             {
-                var content = responseMessage.Content;
+                HttpResponseMessage responseMessage = _ServiceRepository.PostResponse("api/Usuario", Convertir(usuario));
+                if (responseMessage != null)
+                {
+                    var content = responseMessage.Content;
+                }
+                return usuario;
             }
-
-            return usuario;
+            catch (Exception ex)
+            {
+                throw new Exception("Error al agregar usuario: " + ex.Message, ex);
+            }
         }
 
         public void Delete(int id)
         {
-            HttpResponseMessage responseMessage = _ServiceRepository.DeleteResponse("api/Usuario/" + id);
-            if (responseMessage != null)
+            try
             {
-                var content = responseMessage.Content;
+                HttpResponseMessage responseMessage = _ServiceRepository.DeleteResponse("api/Usuario/" + id);
+                if (responseMessage != null)
+                {
+                    var content = responseMessage.Content;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al eliminar usuario con ID {id}: {ex.Message}", ex);
             }
         }
 
         public UsuarioViewModel GetUsuario(int? id)
         {
-            UsuarioAPI data = new UsuarioAPI();
-            HttpResponseMessage responseMessage = _ServiceRepository.GetResponse("api/Usuario/" + id.ToString());
-
-            if (responseMessage != null)
+            try
             {
-                var content = responseMessage.Content.ReadAsStringAsync().Result;
-                data = JsonConvert.DeserializeObject<UsuarioAPI>(content) ?? new();
-            }
+                UsuarioAPI data = new UsuarioAPI();
+                HttpResponseMessage responseMessage = _ServiceRepository.GetResponse("api/Usuario/" + id.ToString());
 
-            return Convertir(data);
+                if (responseMessage != null)
+                {
+                    var content = responseMessage.Content.ReadAsStringAsync().Result;
+                    data = JsonConvert.DeserializeObject<UsuarioAPI>(content) ?? new UsuarioAPI();
+                }
+
+                return Convertir(data);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al obtener usuario con ID {id}: {ex.Message}", ex);
+            }
         }
 
         public List<UsuarioViewModel> GetUsuarios()
         {
-            List<UsuarioAPI> data = new List<UsuarioAPI>();
-            HttpResponseMessage responseMessage = _ServiceRepository.GetResponse("api/Usuario");
-
-            if (responseMessage != null)
+            try
             {
-                var content = responseMessage.Content.ReadAsStringAsync().Result;
-                data = JsonConvert.DeserializeObject<List<UsuarioAPI>>(content) ?? new();
+                List<UsuarioAPI> data = new List<UsuarioAPI>();
+                HttpResponseMessage responseMessage = _ServiceRepository.GetResponse("api/usuario");
+
+                if (responseMessage != null)
+                {
+                    var content = responseMessage.Content.ReadAsStringAsync().Result;
+                    data = JsonConvert.DeserializeObject<List<UsuarioAPI>>(content) ?? new();
+                }
+
+                List<UsuarioViewModel> list = new();
+                foreach (var item in data)
+                {
+                    list.Add(Convertir(item));
+                }
+
+                return list;
             }
-
-            List<UsuarioViewModel> list = new List<UsuarioViewModel>();
-            data.ForEach(x =>
+            catch (Exception ex)
             {
-                list.Add(Convertir(x));
-            });
-
-            return list;
+                throw new Exception("Error al obtener la lista de usuarios: " + ex.Message, ex);
+            }
         }
 
         public UsuarioViewModel Update(UsuarioViewModel usuario)
         {
-            HttpResponseMessage responseMessage = _ServiceRepository.PutResponse("api/Usuario", Convertir(usuario));
-            if (responseMessage != null)
+            try
             {
-                var content = responseMessage.Content;
-            }
+                HttpResponseMessage responseMessage = _ServiceRepository.PutResponse("api/Usuario", Convertir(usuario));
+                if (responseMessage != null)
+                {
+                    var content = responseMessage.Content;
+                }
 
-            return usuario;
+                return usuario;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al actualizar usuario: " + ex.Message, ex);
+            }
         }
     }
 }
+
+//engo un problema quiero que me digas cuantos productos hay en el sistema 

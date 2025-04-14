@@ -5,7 +5,7 @@ namespace Entities.Entities;
 
 public partial class Rol
 {
-    public int RolId { get; set; }
+    public int RolID { get; set; }
 
     public string NombreRol { get; set; } = null!;
 

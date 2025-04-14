@@ -18,12 +18,12 @@ namespace BackEnd.Services.Implementations
         {
             return new Usuario
             {
-                UsuarioId = usuario.UsuarioId,
+                UsuarioID = usuario.UsuarioID,
                 Nombre = usuario.Nombre,
                 Apellido = usuario.Apellido,
                 Correo = usuario.Correo,
                 Contraseña = usuario.Contraseña,
-                RolId = usuario.RolID,
+                RolID = usuario.RolID,
                 FechaRegistro = usuario.FechaRegistro,
                 Activo = usuario.Activo,
                 Direccion = usuario.Direccion,
@@ -35,12 +35,13 @@ namespace BackEnd.Services.Implementations
         {
             return new UsuarioDTO
             {
-                UsuarioId = usuario.UsuarioId,
+                UsuarioID = usuario.UsuarioID,
                 Nombre = usuario.Nombre,
                 Apellido = usuario.Apellido,
                 Correo = usuario.Correo,
                 Contraseña = usuario.Contraseña,
-                RolId = usuario.RolId,
+                RolID = usuario.RolID,
+               
                 FechaRegistro = usuario.FechaRegistro,
                 Activo = usuario.Activo,
                 Direccion = usuario.Direccion,
@@ -57,7 +58,7 @@ namespace BackEnd.Services.Implementations
 
         public void DeleteUsuario(int id)
         {
-            var usuario = new Usuario { UsuarioId = id };
+            var usuario = new Usuario { UsuarioID = id };
             _unidadDeTrabajo.UsuarioDAL.Remove(usuario);
             _unidadDeTrabajo.Complete();
         }

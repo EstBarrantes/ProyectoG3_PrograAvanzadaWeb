@@ -5,76 +5,116 @@
     Layout = "~/Views/_ViewImports.cshtml";
 }
 
-<h1>ViewCrearUsuario</h1>
+<style>
+    .cuadro-usuario {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 30px;
+        border-radius: 12px;
+        color: white;
+    }
 
-<h4>UsuarioAPI</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="ViewCrearUsuario">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="UsuarioId" class="control-label"></label>
-                <input asp-for="UsuarioId" class="form-control" />
-                <span asp-validation-for="UsuarioId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
-                <input asp-for="Nombre" class="form-control" />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Apellido" class="control-label"></label>
-                <input asp-for="Apellido" class="form-control" />
-                <span asp-validation-for="Apellido" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Correo" class="control-label"></label>
-                <input asp-for="Correo" class="form-control" />
-                <span asp-validation-for="Correo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Contraseña" class="control-label"></label>
-                <input asp-for="Contraseña" class="form-control" />
-                <span asp-validation-for="Contraseña" class="text-danger"></span>
-            </div>
-           
-            <div class="form-group">
-                <label asp-for="RolId" class="control-label"></label>
-                <input asp-for="RolId" class="form-control" />
-                <span asp-validation-for="RolId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FechaRegistro" class="control-label"></label>
-                <input asp-for="FechaRegistro" class="form-control" />
-                <span asp-validation-for="FechaRegistro" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Activo" /> @Html.DisplayNameFor(model => model.Activo)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="Direccion" class="control-label"></label>
-                <input asp-for="Direccion" class="form-control" />
-                <span asp-validation-for="Direccion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Telefono" class="control-label"></label>
-                <input asp-for="Telefono" class="form-control" />
-                <span asp-validation-for="Telefono" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        .cuadro-usuario label,
+        .cuadro-usuario h1,
+        .cuadro-usuario h4,
+        .cuadro-usuario dt {
+            color: white;
+        }
+
+        .cuadro-usuario .form-control,
+        .cuadro-usuario .form-check-input {
+            background-color: #f8f9fa;
+            color: black;
+        }
+
+        .cuadro-usuario hr {
+            border-color: #ccc;
+        }
+</style>
+
+<div class="container my-5 cuadro-usuario">
+    <h1>Crear Usuario</h1>
+
+    <h4>UsuarioAPI</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="ViewCrearUsuario">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="UsuarioID"></label>
+                    <input asp-for="UsuarioID" class="form-control" />
+                    <span asp-validation-for="UsuarioID" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Nombre"></label>
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Apellido"></label>
+                    <input asp-for="Apellido" class="form-control" />
+                    <span asp-validation-for="Apellido" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Correo"></label>
+                    <input asp-for="Correo" class="form-control" />
+                    <span asp-validation-for="Correo" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Contraseña"></label>
+                    <input asp-for="Contraseña" class="form-control" />
+                    <span asp-validation-for="Contraseña" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="RolId"></label>
+                    <input asp-for="RolId" class="form-control" />
+                    <span asp-validation-for="RolId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="FechaRegistro"></label>
+                    <input asp-for="FechaRegistro" class="form-control" />
+                    <span asp-validation-for="FechaRegistro" class="text-danger"></span>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Activo" /> @Html.DisplayNameFor(model => model.Activo)
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Direccion"></label>
+                    <input asp-for="Direccion" class="form-control" />
+                    <span asp-validation-for="Direccion" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Telefono"></label>
+                    <input asp-for="Telefono" class="form-control" />
+                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mt-3">
+                    <input type="submit" value="Crear" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <a asp-action="Index" class="text-white">Volver a la lista</a>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

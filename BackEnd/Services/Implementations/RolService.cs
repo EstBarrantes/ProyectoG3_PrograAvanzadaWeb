@@ -19,7 +19,7 @@ namespace BackEnd.Services.implementations
         {
             return new Rol
             {
-                RolId = rol.RolId,
+                RolID = rol.RolID,
                 NombreRol = rol.NombreRol,
             };
         }
@@ -27,7 +27,7 @@ namespace BackEnd.Services.implementations
         {
             return new RolDTO
             {
-                RolId = rol.RolId,
+                RolID = rol.RolID,
                 NombreRol = rol.NombreRol,
             };
         }
@@ -41,7 +41,7 @@ namespace BackEnd.Services.implementations
 
         public void DeleteRol(int id)
         {
-            var rol = new Rol { RolId = id };
+            var rol = new Rol { RolID = id };
             _unidadDeTrabajo.RolDAL.Remove(rol);
             _unidadDeTrabajo.Complete();
         }

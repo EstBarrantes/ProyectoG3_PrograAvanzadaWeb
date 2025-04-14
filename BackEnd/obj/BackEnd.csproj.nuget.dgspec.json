@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\BackEnd.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\BackEnd.csproj": {}
   },
   "projects": {
-    "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\BackEnd.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\BackEnd.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\BackEnd.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\BackEnd.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -25,16 +25,17 @@
           "net8.0"
         ],
         "sources": {
+          "\nhttps://nuget.pkg.github.com/ChristopherHG-007/index.json": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/ChristopherHG-007/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\DAL.csproj": {
-                "projectPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\DAL.csproj"
+              "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\DAL\\DAL.csproj"
               }
             }
           }
@@ -48,7 +49,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -78,18 +80,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\DAL.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -103,16 +105,17 @@
           "net8.0"
         ],
         "sources": {
+          "\nhttps://nuget.pkg.github.com/ChristopherHG-007/index.json": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/ChristopherHG-007/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities.csproj": {
-                "projectPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities.csproj"
+              "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\Entities\\Entities.csproj"
               }
             }
           }
@@ -126,7 +129,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -147,18 +151,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -172,9 +176,10 @@
           "net8.0"
         ],
         "sources": {
+          "\nhttps://nuget.pkg.github.com/ChristopherHG-007/index.json": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/ChristopherHG-007/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -191,7 +196,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -228,7 +234,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

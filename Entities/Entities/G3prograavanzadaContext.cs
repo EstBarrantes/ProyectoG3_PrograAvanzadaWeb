@@ -132,23 +132,23 @@ public partial class G3prograavanzadaContext : DbContext
 
         modelBuilder.Entity<Rol>(entity =>
         {
-            entity.HasKey(e => e.RolId).HasName("PK__Rol__F92302D18285DE8B");
+            entity.HasKey(e => e.RolID).HasName("PK__Rol__F92302D18285DE8B");
 
             entity.ToTable("Rol");
 
-            entity.Property(e => e.RolId).HasColumnName("RolID");
+            entity.Property(e => e.RolID).HasColumnName("RolID");
             entity.Property(e => e.NombreRol).HasMaxLength(50);
         });
 
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.UsuarioId).HasName("PK__Usuario__2B3DE798C13E457E");
+            entity.HasKey(e => e.UsuarioID).HasName("PK__Usuario__2B3DE798C13E457E");
 
             entity.ToTable("Usuario");
 
             entity.HasIndex(e => e.Correo, "UQ__Usuario__60695A19E60F1092").IsUnique();
 
-            entity.Property(e => e.UsuarioId).HasColumnName("UsuarioID");
+            entity.Property(e => e.UsuarioID).HasColumnName("UsuarioID");
             entity.Property(e => e.Activo).HasDefaultValue(true);
             entity.Property(e => e.Apellido).HasMaxLength(100);
             entity.Property(e => e.Contraseña).HasMaxLength(255);
@@ -158,11 +158,11 @@ public partial class G3prograavanzadaContext : DbContext
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
             entity.Property(e => e.Nombre).HasMaxLength(100);
-            entity.Property(e => e.RolId).HasColumnName("RolID");
+            entity.Property(e => e.RolID).HasColumnName("RolID");
             entity.Property(e => e.Telefono).HasMaxLength(20);
 
             entity.HasOne(d => d.Rol).WithMany(p => p.Usuarios)
-                .HasForeignKey(d => d.RolId)
+                .HasForeignKey(d => d.RolID)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Usuario__RolID__3A81B327");
         });

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qjsfPemS5vM=",
+  "dgSpecHash": "Uy4Jtwq1fK4=",
   "success": true,
-  "projectFilePath": "D:\\Progra Avanzada Web\\ProyectoG3-Progra_Avanzada_Web\\ProyectoG3\\BackEnd\\BackEnd.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\p\\ProyectoG3_PrograAvanzadaWeb\\BackEnd\\BackEnd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

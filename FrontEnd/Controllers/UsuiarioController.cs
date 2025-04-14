@@ -13,85 +13,86 @@ namespace FrontEnd.Controllers
             _usuarioHelper = usuarioHelper;
         }
 
-        // GET: UsuarioController
-        public ActionResult Index()
+        // GET: Usuario/ListadoDeUsuarios
+        public ActionResult ListadoDeUsuarios()
         {
-            return View(_usuarioHelper.GetUsuarios());
+            var usuarios = _usuarioHelper.GetUsuarios();
+            return View("ListadoDeUsuarios", usuarios);
         }
 
-        // GET: UsuarioController/Details/5
+        // GET: Usuario/Details/5
         public ActionResult Details(int id)
         {
-            var result = _usuarioHelper.GetUsuario(id);
-            return View(result);
+            var usuario = _usuarioHelper.GetUsuario(id);
+            return View("ListadoDeUsuarios", usuario); // O crear una vista Details.cshtml si se desea
         }
 
-        // GET: UsuarioController/Create
-        public ActionResult Create()
+        // GET: Usuario/ViewCrearUsuario
+        public ActionResult ViewCrearUsuario()
         {
-            return View();
+            return View("ViewCrearUsuario");
         }
 
-        // POST: UsuarioController/Create
+        // POST: Usuario/ViewCrearUsuario
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(UsuarioViewModel usuario)
+        public ActionResult ViewCrearUsuario(UsuarioViewModel usuario)
         {
             try
             {
                 _usuarioHelper.Add(usuario);
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("ListadoDeUsuarios");
             }
             catch
             {
-                return View();
+                return View("ViewCrearUsuario");
             }
         }
 
-        // GET: UsuarioController/Edit/5
-        public ActionResult Edit(int id)
+        // GET: Usuario/EditarUsuario/5
+        public ActionResult EditarUsuario(int id)
         {
-            return View(_usuarioHelper.GetUsuario(id));
+            var usuario = _usuarioHelper.GetUsuario(id);
+            return View("EditarUsuario", usuario);
         }
 
-        // POST: UsuarioController/Edit/5
+        // POST: Usuario/EditarUsuario
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(UsuarioViewModel usuario)
+        public ActionResult EditarUsuario(UsuarioViewModel usuario)
         {
             try
             {
                 _usuarioHelper.Update(usuario);
-                return RedirectToAction("Details", new { id = usuario.UsuarioId });
+                return RedirectToAction("ListadoDeUsuarios");
             }
             catch
             {
-                return View();
+                return View("EditarUsuario", usuario);
             }
         }
 
-        // GET: UsuarioController/Delete/5
-        public ActionResult Delete(int id)
+        // GET: Usuario/EliminarUsuario/5
+        public ActionResult EliminarUsuario(int id)
         {
-            return View(_usuarioHelper.GetUsuario(id));
+            var usuario = _usuarioHelper.GetUsuario(id);
+            return View("EliminarUsuario", usuario);
         }
 
-        // POST: UsuarioController/Delete/5
+        // POST: Usuario/EliminarUsuario
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(UsuarioViewModel usuario)
+        public ActionResult EliminarUsuario(UsuarioViewModel usuario)
         {
             try
             {
-                _usuarioHelper.Delete(usuario.UsuarioId);
-                return RedirectToAction(nameof(Index));
+                _usuarioHelper.Delete(usuario.UsuarioID);
+                return RedirectToAction("ListadoDeUsuarios");
             }
             catch
             {
-                return View();
+                return View("EliminarUsuario", usuario);
             }
         }
     }
 }
-
-

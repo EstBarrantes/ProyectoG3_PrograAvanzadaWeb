@@ -5,7 +5,7 @@ namespace Entities.Entities;
 
 public partial class Usuario
 {
-    public int UsuarioId { get; set; }
+    public int UsuarioID { get; set; }
   
     public string Nombre { get; set; } = null!;
 
@@ -15,7 +15,7 @@ public partial class Usuario
 
     public string Contraseña { get; set; } = null!;
 
-    public int RolId { get; set; }
+    public int RolID { get; set; }
   
     public DateTime FechaRegistro { get; set; }
 
@@ -28,4 +28,10 @@ public partial class Usuario
     public virtual ICollection<Factura> Facturas { get; set; } = new List<Factura>();
 
     public virtual Rol Rol { get; set; } = null!;
+
+    
+
+
+
+
 }

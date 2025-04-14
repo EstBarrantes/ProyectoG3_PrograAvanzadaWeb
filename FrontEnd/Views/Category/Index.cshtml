@@ -1,41 +1,84 @@
 ﻿@model IEnumerable<FrontEnd.Models.CategoryViewModel>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Categorías";
+
+    // Lista de clases de fondo personalizadas (colores suaves)
+    var bgColors = new List<string> {
+        "bg-soft-blue", "bg-soft-green", "bg-soft-yellow",
+        "bg-soft-pink", "bg-soft-purple", "bg-soft-orange"
+    };
+    var colorIndex = 0;
 }
 
-<h1>Index</h1>
+<style>
+    .bg-soft-blue {
+        background-color: #e6f0ff;
+    }
+
+    .bg-soft-green {
+        background-color: #e6ffed;
+    }
+
+    .bg-soft-yellow {
+        background-color: #fffbe6;
+    }
+
+    .bg-soft-pink {
+        background-color: #ffe6f0;
+    }
+
+    .bg-soft-purple {
+        background-color: #f3e6ff;
+    }
+
+    .bg-soft-orange {
+        background-color: #fff1e6;
+    }
+
+    .card-title {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .card-footer .btn {
+        flex: 1;
+        margin: 0 2px;
+    }
+
+    .card {
+        transition: transform 0.2s ease-in-out;
+    }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+</style>
+
+<h1 class="mb-4">Categorías</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-success mb-4">Crear nueva categoría</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.CategoriaId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nombre)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                    @Html.DisplayFor(modelItem => item.CategoriaId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.CategoriaId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.CategoriaId }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.CategoriaId })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    @foreach (var item in Model)
+    {
+        var colorClass = bgColors[colorIndex % bgColors.Count];
+        colorIndex++;
+
+        <div class="col">
+            <div class="card h-100 shadow-sm @colorClass">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">@item.Nombre</h5>
+                    <p class="card-text text-muted">ID: @item.CategoriaId</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 d-flex justify-content-between">
+                    <a asp-action="Edit" asp-route-id="@item.CategoriaId" class="btn btn-sm btn-primary">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.CategoriaId" class="btn btn-sm btn-info">Detalles</a>
+                    <a asp-action="Delete" asp-route-id="@item.CategoriaId" class="btn btn-sm btn-danger">Eliminar</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

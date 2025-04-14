@@ -1,77 +1,77 @@
 ﻿@model IEnumerable<FrontEnd.Models.ProductoViewModel>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Productos";
+    ViewData["BodyClass"] = "producto-fondo";
 }
 
-<h1>Index</h1>
+<style>
+    .card-producto {
+        background-color: rgba(0, 0, 0, 0.75);
+        color: white;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        transition: transform 0.2s ease-in-out;
+    }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ProductoId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descripcion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Precio)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CategoriaNombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ImagenUrl)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaAgregado)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descuento)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProductoId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descripcion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Precio)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CategoriaNombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ImagenUrl)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaAgregado)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descuento)
-            </td>
-            <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.ProductoId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.ProductoId }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.ProductoId })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        .card-producto:hover {
+            transform: scale(1.02);
+        }
+
+        .card-producto img {
+            object-fit: cover;
+            height: 200px;
+            border-radius: 10px 10px 0 0;
+        }
+
+    .card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .btn-action {
+        margin: 0 3px;
+    }
+
+    .titulo-productos {
+        color: #1a1a1a;
+    }
+</style>
+
+<div class="container my-4">
+    <h2 class="mb-4 titulo-productos"><i class="bi bi-box-seam"></i> Catálogo de Productos</h2>
+
+    <div class="mb-3">
+        <a asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i> Crear nuevo producto</a>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card card-producto h-100">
+                    <img src="@item.ImagenUrl" class="card-img-top" alt="@item.Nombre" onerror="this.src='/img/no-image.png';" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@item.Nombre</h5>
+                        <p class="card-text mb-1">Categoría: <strong>@item.CategoriaNombre</strong></p>
+                        <p class="card-text mb-1">Precio: <strong>$@item.Precio</strong></p>
+                        <p class="card-text mb-1">Descuento: @item.Descuento%</p>
+                        <p class="card-text text-muted" style="font-size: 0.85rem;">Agregado: @item.FechaAgregado.ToShortDateString()</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-flex justify-content-between">
+                        <a asp-action="Edit" asp-route-id="@item.ProductoId" class="btn btn-primary btn-sm btn-action">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+                        <a asp-action="Details" asp-route-id="@item.ProductoId" class="btn btn-info btn-sm btn-action">
+                            <i class="bi bi-eye"></i>
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@item.ProductoId" class="btn btn-danger btn-sm btn-action">
+                            <i class="bi bi-trash"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

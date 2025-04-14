@@ -5,86 +5,82 @@
     Layout = "~/Views/_ViewImports.cshtml";
 }
 
-<h1>ListadoDeUsuarios</h1>
+<style>
+    .cuadro-tabla {
+        background-color: rgba(0, 255, 255, 0.2); /* celeste claro semi-transparente */
+        padding: 30px;
+        border-radius: 12px;
+        color: #000;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.UsuarioId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Apellido)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Correo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Contraseña)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RolId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaRegistro)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Activo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Direccion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telefono)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.UsuarioId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Apellido)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Correo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Contraseña)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RolId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaRegistro)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Activo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Direccion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefono)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        .cuadro-tabla h1 {
+            color: #0dcaf0;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .cuadro-tabla table thead {
+            background-color: rgba(13, 202, 240, 0.3);
+        }
+
+        .cuadro-tabla th, .cuadro-tabla td {
+            vertical-align: middle;
+        }
+
+        .cuadro-tabla a {
+            color: #0d6efd;
+        }
+
+            .cuadro-tabla a:hover {
+                text-decoration: underline;
+            }
+</style>
+
+<div class="container my-5 cuadro-tabla">
+    <h1>Listado de Usuarios</h1>
+
+    <p>
+        <a asp-action="Create" class="btn btn-success">Crear nuevo</a>
+    </p>
+
+    <table class="table table-bordered table-hover bg-white text-dark">
+        <thead class="text-center">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.UsuarioID)</th>
+                <th>@Html.DisplayNameFor(model => model.Nombre)</th>
+                <th>@Html.DisplayNameFor(model => model.Apellido)</th>
+                <th>@Html.DisplayNameFor(model => model.Correo)</th>
+                <th>@Html.DisplayNameFor(model => model.Contraseña)</th>
+                <th>@Html.DisplayNameFor(model => model.RolId)</th>
+                <th>@Html.DisplayNameFor(model => model.FechaRegistro)</th>
+                <th>@Html.DisplayNameFor(model => model.Activo)</th>
+                <th>@Html.DisplayNameFor(model => model.Direccion)</th>
+                <th>@Html.DisplayNameFor(model => model.Telefono)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.UsuarioID)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Apellido)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Correo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Contraseña)</td>
+                    <td>@Html.DisplayFor(modelItem => item.RolId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.FechaRegistro)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Activo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Direccion)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Telefono)</td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.UsuarioID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.UsuarioID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.UsuarioID })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,8 +1,50 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    .fondo-inicio {
+        background-image: url('/Img/Captura de pantalla 2025-04-13 190458.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    }
+
+    .blur-box {
+        background: rgba(0, 0, 0, 0.5); /* Más opaco para mayor contraste */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        width: 100%;
+        height: 100%;
+        padding: 100px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fondo-inicio .btn {
+        margin: 10px;
+    }
+</style>
+
+<div class="fondo-inicio">
+    <div class="blur-box text-center">
+        <h1 class="display-4 fw-bold">Bienvenido a ELECTRONEW</h1>
+        <p class="lead">Plataforma de administración de productos, usuarios y categorías.</p>
+
+        <div>
+            <a asp-controller="Producto" asp-action="Index" class="btn btn-primary btn-lg">Ver productos</a>
+            <a asp-controller="Usuario" asp-action="ListadoDeUsuarios" class="btn btn-outline-light btn-lg">Gestión de usuarios</a>
+        </div>
+    </div>
 </div>

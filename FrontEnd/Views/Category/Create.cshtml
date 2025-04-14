@@ -1,34 +1,72 @@
 ﻿@model FrontEnd.Models.CategoryViewModel
 
 @{
-    ViewData["Title"] = "Crear";
+    ViewData["Title"] = "Crear Categoría";
 }
 
-<h1>Crear Categoría</h1>
+<style>
+    .form-container {
+        background-color: #f9f9f9;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin: 40px auto;
+        max-width: 600px;
+    }
 
-<h4>CategoryViewModel</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-           
-            <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
-                <input asp-for="Nombre" class="form-control" />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+        .form-container h2 {
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: #333;
+        }
 
-<div>
-    <a asp-action="Index">Back to List</a>
+        .form-container label {
+            font-weight: 500;
+        }
+
+    .btn-custom {
+        width: 100%;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-top: 20px;
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div class="form-container">
+    <h2><i class="bi bi-folder-plus"></i> Crear Nueva Categoría</h2>
+    <p class="text-muted">Rellena el siguiente campo para agregar una nueva categoría al sistema. Asegúrate de que el nombre sea único y descriptivo.</p>
+
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Nombre" class="control-label">Nombre de la categoría</label>
+            <input asp-for="Nombre" class="form-control" placeholder="Ej: Periféricos, Componentes, Audio..." />
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-custom">
+                <i class="bi bi-save"></i> Guardar Categoría
+            </button>
+        </div>
+    </form>
+
+    <a asp-action="Index" class="back-link"><i class="bi bi-arrow-left"></i> Volver al listado de categorías</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

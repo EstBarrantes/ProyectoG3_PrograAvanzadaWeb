@@ -4,11 +4,12 @@ namespace BackEnd.DTO
 {
     public class RolDTO
     {
-        public int RolId { get; set; }
+     
+        public int RolID { get; set; }
 
         public string NombreRol { get; set; } = null!;
 
 
-        //public virtual ICollection<Usuario> Usuarios { get; set; } = new List<Usuario>();
+        public virtual ICollection<Usuario> Usuarios { get; set; } = new List<Usuario>();
     }
 }
