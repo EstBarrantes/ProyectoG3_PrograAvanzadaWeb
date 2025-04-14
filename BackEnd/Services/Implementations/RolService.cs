@@ -72,7 +72,7 @@ namespace BackEnd.Services.implementations
 
         public RolDTO GetRolByCorreo(string correo)
         {
-            var result = _unidadDeTrabajo.RolDAL.Get(id);
+            var result = _unidadDeTrabajo.UsuarioDAL.GetRolByCorreo(correo);
             return ConvertirDTO(result);
         }
 

@@ -6,6 +6,6 @@ namespace BackEnd.Services.Interfaces
     public interface ITokenService
     {
 
-        TokenDTO GenerateToken(IdentityUser user, RolDTO rol);
+        TokenDTO GenerateToken(UsuarioDTO user, RolDTO rol);
     }
 }

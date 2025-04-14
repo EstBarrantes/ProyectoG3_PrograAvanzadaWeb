@@ -22,7 +22,7 @@ namespace BackEnd.Services.Implementations
                 Nombre = usuario.Nombre,
                 Apellido = usuario.Apellido,
                 Correo = usuario.Correo,
-                Contraseña = usuario.Contraseña,
+                Contraseña = usuario.Contrasena,
                 RolID = usuario.RolID,
                 FechaRegistro = usuario.FechaRegistro,
                 Activo = usuario.Activo,
@@ -39,7 +39,7 @@ namespace BackEnd.Services.Implementations
                 Nombre = usuario.Nombre,
                 Apellido = usuario.Apellido,
                 Correo = usuario.Correo,
-                Contraseña = usuario.Contraseña,
+                Contrasena = usuario.Contraseña,
                 RolID = usuario.RolID,
                
                 FechaRegistro = usuario.FechaRegistro,
@@ -67,6 +67,12 @@ namespace BackEnd.Services.Implementations
         {
             var result = _unidadDeTrabajo.UsuarioDAL.Get(id);
             return ConvertirDTO(result);
+        }
+
+        public async Task<UsuarioDTO> GetUsuarioByCorreo(string correo)
+        {
+            var result = await _unidadDeTrabajo.UsuarioDAL.GetUsuarioByCorreoAsync(correo);
+            return ConvertirDTO(result ?? new());
         }
 
         public List<UsuarioDTO> GetUsuarios()

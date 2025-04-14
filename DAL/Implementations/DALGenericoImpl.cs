@@ -40,13 +40,6 @@ namespace DAL.Implementations
 
             return _ProyectoContext.Set<TEntity>().Find(id);
         }
-
-        public TEntity GetByCorreo(string correo)
-        {
-
-            return _ProyectoContext.Set<TEntity>().Find(id);
-        }
-
         public IEnumerable<TEntity> GetAll()
         {
             return _ProyectoContext.Set<TEntity>().ToList();

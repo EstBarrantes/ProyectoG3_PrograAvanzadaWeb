@@ -1,5 +1,7 @@
 ﻿using BackEnd.DTO;
+using BackEnd.Services.Implementations;
 using BackEnd.Services.Interfaces;
+using Entities.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -14,15 +16,12 @@ namespace BackEnd.Controllers
     {
         private readonly IUsuarioService _usuarioService;
         private readonly IRolService _rolService;
-        private readonly UserManager<IdentityUser> userManager;
         private ITokenService TokenService;
 
-        public UsuarioController(IUsuarioService usuarioService, IRolService rolService, UserManager<IdentityUser> userManager,
-                                ITokenService tokenService)
+        public UsuarioController(IUsuarioService usuarioService, IRolService rolService,ITokenService tokenService)
         {
             _usuarioService = usuarioService;
             _rolService = rolService;
-            this.userManager = userManager;
             TokenService = tokenService;
         }
 
@@ -67,51 +66,63 @@ namespace BackEnd.Controllers
         {
 
 
-            IdentityUser user = await userManager.FindByNameAsync(model.Correo);
-            LoginDTO Usuario = new LoginDTO();
-            if (user != null && await userManager.CheckPasswordAsync(user, model.Contrasena))
+            var usuario = await _usuarioService.GetUsuarioByCorreo(model.Correo);
+
+            if (usuario == null)
+                return Unauthorized("Credenciales inválidas");
+
+            var hasher = new PasswordHasher<object>();
+            var result = hasher.VerifyHashedPassword(null, usuario.Contrasena, model.Contrasena);
+
+
+            if (result == PasswordVerificationResult.Success)
             {
 
-                var userRoles = await userManager.GetRolesAsync(user);
-                var rol = await _rolService.GetRolByCorreo(correo);
+                //var userRoles = await userManager.GetRolesAsync(user);
+                var rol = _rolService.GetRolByCorreo(model.Correo);
 
-                var jwtToken = TokenService.GenerateToken(user, userRoles.ToList());
+                var jwtToken = TokenService.GenerateToken(usuario, rol);
 
-                Usuario.Token = jwtToken;
-                Usuario.Rol = userRoles.ToList();
-                Usuario.Username = user.UserName;
+                usuario.Token = jwtToken;
+                usuario.RolID = rol.RolID;
+                //usuario.Correo = user.UserName; //creo que no ocupo esta linea?
 
 
-                return Ok(Usuario);
+                return Ok(usuario);
             }
             return Unauthorized();
         }
 
         [HttpPost]
         [Route("Register")]
-        public async Task<IActionResult> Register([FromBody] RegisterDTO model)
+        public async Task<IActionResult> Register([FromBody] UsuarioDTO model)
         {
 
-            var userExists = await userManager.FindByNameAsync(model.Username);
+            var usuarioExistente = await _usuarioService.GetUsuarioByCorreo(model.Correo);
 
-            if (userExists != null)
+            if (usuarioExistente != null)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError);
+                return Conflict("Ya existe un usuario con ese correo.");
             }
 
-            IdentityUser user = new IdentityUser
+            var hasher = new PasswordHasher<object>();
+            string hashedPassword = hasher.HashPassword(null, model.Contrasena);
+
+            var nuevoUsuario = new UsuarioDTO
             {
-                Email = model.Email,
-                SecurityStamp = Guid.NewGuid().ToString(),
-                UserName = model.Username
+                Correo = model.Correo,
+                Contrasena = hashedPassword,
+                RolID = model.RolID,
+                Nombre = model.Nombre,
+                Apellido = model.Apellido,
+                FechaRegistro = DateTime.Now,
+                Activo = true,
+                Direccion = model.Direccion,
+                Telefono = model.Telefono
+
             };
 
-            var result = await userManager.CreateAsync(user, model.Password);
-            if (!result.Succeeded)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError);
-
-            }
+            _usuarioService.AddUsuario(nuevoUsuario);
 
             return Ok();
 

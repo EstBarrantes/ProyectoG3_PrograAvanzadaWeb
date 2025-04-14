@@ -9,5 +9,8 @@ namespace DAL.Interfaces
 {
     public interface IUsuarioDAL : IDALGenerico<Usuario>
     {
+
+        Rol GetRolByCorreo(string correo);
+        Task<Usuario?> GetUsuarioByCorreoAsync(string correo);
     }
 }

@@ -12,6 +12,7 @@ namespace BackEnd.Services.Interfaces
         void DeleteUsuario(int id);
         List<UsuarioDTO> GetUsuarios();
         UsuarioDTO GetUsuarioById(int id);
+        Task<UsuarioDTO> GetUsuarioByCorreo(string correo);
 
 
     }

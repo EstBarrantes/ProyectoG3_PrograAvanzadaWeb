@@ -5,7 +5,11 @@ using BackEnd.Services.Interfaces;
 using DAL.Implementations;
 using DAL.Interfaces;
 using Entities.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,15 +20,42 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-#region DI
-
-
+#region BD
 builder.Services.AddDbContext<G3prograavanzadaContext>(optionsAction =>
                     optionsAction
                     .UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 
     );
+#endregion
 
+#region  JWT
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+
+})
+
+    .AddJwtBearer(options =>
+    {
+        options.SaveToken = true;
+        options.RequireHttpsMetadata = false;
+        options.TokenValidationParameters = new TokenValidationParameters()
+        {
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            //ValidAudience = builder.Configuration["JWT:ValidAudience"],
+            //ValidIssuer = builder.Configuration["JWT:ValidIssuer"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
+        };
+    });
+
+
+
+#endregion
+
+#region DI
 
 builder.Services.AddScoped<IUnidadDeTrabajo, UnidadDeTrabajo>();
 builder.Services.AddScoped<IRolDAL, RolDAL>();
@@ -35,6 +66,7 @@ builder.Services.AddScoped<IUsuarioDAL, UsuarioDAL>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<IProductoDAL, ProductoDAL>();
 builder.Services.AddScoped<IProductoService, ProductoService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 #endregion
 
 
@@ -47,6 +79,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 app.UseMiddleware<ApiKeyMiddleware>();
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
