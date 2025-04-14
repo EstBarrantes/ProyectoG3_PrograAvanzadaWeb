@@ -1,11 +1,14 @@
 # Visual Studio
 .vs/
+.vs\
 *.user
 *.suo
 
 # Build results
 bin/
 obj/
+bin\
+obj\
 *.dll
 *.exe
 *.pdb
@@ -17,7 +20,7 @@ secrets.json
 
 # Node (si usás JS para algo)
 node_modules/
-
+node_modules\
 # System files
 *.DS_Store
 Thumbs.db
@@ -26,6 +29,10 @@ Thumbs.db
 publish/
 wwwroot/dist/
 wwwroot/node_modules/
+
+publish\
+wwwroot\dist\
+wwwroot\node_modules\
 
 # User-specific files
 *.swp
@@ -36,7 +43,7 @@ wwwroot/node_modules/
 project.lock.json
 project.fragment.lock.json
 artifacts/
-
+artifacts\
 # Others
 *.db
 *.mdf
