@@ -71,25 +71,48 @@ namespace BackEnd.Controllers
             if (usuario == null)
                 return Unauthorized("Credenciales inválidas");
 
-            var hasher = new PasswordHasher<object>();
-            var result = hasher.VerifyHashedPassword(null, usuario.Contrasena, model.Contrasena);
-
-
-            if (result == PasswordVerificationResult.Success)
+            bool estaHash = !string.IsNullOrWhiteSpace(usuario.Contrasena) && usuario.Contrasena.Length >= 60;
+            if (estaHash)
             {
-
-                //var userRoles = await userManager.GetRolesAsync(user);
-                var rol = _rolService.GetRolByCorreo(model.Correo);
-
-                var jwtToken = TokenService.GenerateToken(usuario, rol);
-
-                usuario.Token = jwtToken;
-                usuario.RolID = rol.RolID;
-                //usuario.Correo = user.UserName; //creo que no ocupo esta linea?
+                var hasher = new PasswordHasher<object>();
+                var result = hasher.VerifyHashedPassword(null, usuario.Contrasena, model.Contrasena);
 
 
-                return Ok(usuario);
+                if (result == PasswordVerificationResult.Success)
+                {
+
+                    //var userRoles = await userManager.GetRolesAsync(user);
+                    var rol = _rolService.GetRolByCorreo(model.Correo);
+
+                    var jwtToken = TokenService.GenerateToken(usuario, rol);
+
+                    usuario.Token = jwtToken;
+                    usuario.RolID = rol.RolID;
+                    //usuario.Correo = user.UserName; //creo que no ocupo esta linea?
+
+
+                    return Ok(usuario);
+                }
             }
+            else
+            {
+                if (usuario.Contrasena == model.Contrasena)
+                {
+
+                    var rol = _rolService.GetRolByCorreo(model.Correo);
+
+                    var jwtToken = TokenService.GenerateToken(usuario, rol);
+
+                    usuario.Token = jwtToken;
+                    usuario.RolID = rol.RolID;
+                    //usuario.Correo = user.UserName; //creo que no ocupo esta linea?
+
+
+                    return Ok(usuario);
+                }
+            }
+
+                
             return Unauthorized();
         }
 
