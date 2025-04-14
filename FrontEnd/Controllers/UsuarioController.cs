@@ -39,7 +39,7 @@ namespace FrontEnd.Controllers
             UsuarioViewModel model = new();
             model.listaRoles = _rolHelper.GetRoles();
 
-            return View("ViewCrearUsuario", model);
+            return View(model);
         }
 
         // POST: Usuario/ViewCrearUsuario

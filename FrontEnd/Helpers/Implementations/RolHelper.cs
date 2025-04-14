@@ -19,7 +19,7 @@ namespace FrontEnd.Helpers.Implementations
         {
             return new RolViewModel
             {
-                RolID = Rol.RolID,
+                RolId = Rol.RolId,
                 NombreRol = Rol.NombreRol,
             };
         }
@@ -28,7 +28,7 @@ namespace FrontEnd.Helpers.Implementations
         {
             return new RolAPI
             {
-                RolID = Rol.RolID,
+                RolId = Rol.RolId,
                 NombreRol = Rol.NombreRol,
             };
         }

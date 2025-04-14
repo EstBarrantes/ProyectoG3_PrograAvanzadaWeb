@@ -3,7 +3,7 @@
     public class RolViewModel
     {
 
-        public int RolID { get; set; }
+        public int RolId { get; set; }
         public string? NombreRol { get; set; }
 
 

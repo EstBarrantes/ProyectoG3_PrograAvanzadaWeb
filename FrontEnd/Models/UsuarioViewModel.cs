@@ -16,7 +16,7 @@ namespace FrontEnd.Models
         public bool Activo { get; set; }
         public string? Direccion { get; set; }
         public string? Telefono { get; set; }
-        public List<RolViewModel>? listaRoles { get; set; }
+        public IEnumerable<RolViewModel>? listaRoles { get; set; }
 
 
     }

@@ -70,7 +70,7 @@
                 </div>
                 <div class="form-group">
                     <label asp-for="RolId" class="control-label"></label>
-                    @Html.DropDownListFor(model => model.RolId, new SelectList(Model.listaRoles, "RolID", "NombreRol"), "--Seleccione un Rol--")
+                    @Html.DropDownListFor(model => model.RolId, new SelectList(Model.listaRoles, "RolId", "NombreRol"), "--Seleccione un Rol--")
                     <span asp-validation-for="RolId" class="text-danger"></span>
                 </div>
                 <div class="form-check">
