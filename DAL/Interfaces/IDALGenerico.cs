@@ -19,6 +19,7 @@ namespace DAL.Interfaces
 
 
         TEntity Get(int id);
+        TEntity GetByCorreo(string correo);
         IEnumerable<TEntity> GetAll();
 
     }

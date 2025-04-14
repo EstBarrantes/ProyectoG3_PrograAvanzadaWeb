@@ -1,6 +1,10 @@
 ﻿using FrontEnd.Helpers.Interfaces;
 using FrontEnd.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
+using FrontEnd.ApiModels;
 
 namespace FrontEnd.Controllers
 {
@@ -94,5 +98,68 @@ namespace FrontEnd.Controllers
                 return View("EliminarUsuario", usuario);
             }
         }
+
+        public ActionResult Login()
+        {
+            UsuarioViewModel user = new UsuarioViewModel();
+            //user.ReturnUrl = ReturnURL;
+            return View(user);
+        }
+
+        [HttpPost]
+        public ActionResult Login(UsuarioViewModel user)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var login = _usuarioHelper.Login(user.Correo, user.Contraseña);
+                    if (login.Token != null)
+                    {
+                        TokenAPI token = new TokenAPI
+                        {
+                            Token = login.Token.Token,
+                            Expiration = login.Token.Expiration
+                        };
+                        HttpContext.Session.SetString("Token", token.Token);
+
+
+
+
+                        var claims = new List<Claim>()
+                        {
+                            new Claim(ClaimTypes.NameIdentifier, login.Correo as string),
+                            new Claim(ClaimTypes.Name, login.Correo as string),
+                            new Claim(ClaimTypes.Role, login.Rol?.ToString() ?? "")
+                        };
+
+                        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                        var principal = new ClaimsPrincipal(identity);
+
+                        HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, new AuthenticationProperties()
+                        { IsPersistent = false });
+
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("UserName", "Invalid login attempt.");
+                        return View(user);
+                    }
+                }
+                return View(user);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+
+
+
+
     }
 }

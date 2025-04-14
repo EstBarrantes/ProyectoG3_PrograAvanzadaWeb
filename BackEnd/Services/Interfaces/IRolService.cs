@@ -10,5 +10,6 @@ namespace BackEnd.Services.Interfaces
         void DeleteRol(int id);
         List<RolDTO> GetRols();
         RolDTO GetRolById(int id);
+        RolDTO GetRolByCorreo(string correo);
     }
 }

@@ -1,5 +1,6 @@
 ﻿using BackEnd.DTO;
 using BackEnd.Services.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
@@ -12,10 +13,17 @@ namespace BackEnd.Controllers
     public class UsuarioController : ControllerBase
     {
         private readonly IUsuarioService _usuarioService;
+        private readonly IRolService _rolService;
+        private readonly UserManager<IdentityUser> userManager;
+        private ITokenService TokenService;
 
-        public UsuarioController(IUsuarioService usuarioService)
+        public UsuarioController(IUsuarioService usuarioService, IRolService rolService, UserManager<IdentityUser> userManager,
+                                ITokenService tokenService)
         {
             _usuarioService = usuarioService;
+            _rolService = rolService;
+            this.userManager = userManager;
+            TokenService = tokenService;
         }
 
         // GET: api/Usuario
@@ -51,6 +59,62 @@ namespace BackEnd.Controllers
         public void Delete(int id)
         {
             _usuarioService.DeleteUsuario(id);
+        }
+
+        [HttpPost]
+        [Route("Login")]
+        public async Task<IActionResult> Login([FromBody] LoginDTO model)
+        {
+
+
+            IdentityUser user = await userManager.FindByNameAsync(model.Correo);
+            LoginDTO Usuario = new LoginDTO();
+            if (user != null && await userManager.CheckPasswordAsync(user, model.Contrasena))
+            {
+
+                var userRoles = await userManager.GetRolesAsync(user);
+                var rol = await _rolService.GetRolByCorreo(correo);
+
+                var jwtToken = TokenService.GenerateToken(user, userRoles.ToList());
+
+                Usuario.Token = jwtToken;
+                Usuario.Rol = userRoles.ToList();
+                Usuario.Username = user.UserName;
+
+
+                return Ok(Usuario);
+            }
+            return Unauthorized();
+        }
+
+        [HttpPost]
+        [Route("Register")]
+        public async Task<IActionResult> Register([FromBody] RegisterDTO model)
+        {
+
+            var userExists = await userManager.FindByNameAsync(model.Username);
+
+            if (userExists != null)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+
+            IdentityUser user = new IdentityUser
+            {
+                Email = model.Email,
+                SecurityStamp = Guid.NewGuid().ToString(),
+                UserName = model.Username
+            };
+
+            var result = await userManager.CreateAsync(user, model.Password);
+            if (!result.Succeeded)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+
+            }
+
+            return Ok();
+
         }
     }
 }

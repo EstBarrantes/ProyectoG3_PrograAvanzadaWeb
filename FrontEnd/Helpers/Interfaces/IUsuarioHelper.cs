@@ -1,4 +1,5 @@
-﻿using FrontEnd.Models;
+﻿using FrontEnd.ApiModels;
+using FrontEnd.Models;
 
 namespace FrontEnd.Helpers.Interfaces
 {
@@ -11,5 +12,7 @@ namespace FrontEnd.Helpers.Interfaces
         UsuarioViewModel Add(UsuarioViewModel usuario);
         UsuarioViewModel Update(UsuarioViewModel usuario);
         void Delete(int id);
+
+        LoginAPI Login(string correo, string contra);
     }
 }

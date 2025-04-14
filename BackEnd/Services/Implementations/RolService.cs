@@ -70,6 +70,11 @@ namespace BackEnd.Services.implementations
             _unidadDeTrabajo.Complete();
         }
 
+        public RolDTO GetRolByCorreo(string correo)
+        {
+            var result = _unidadDeTrabajo.RolDAL.Get(id);
+            return ConvertirDTO(result);
+        }
 
     }
 }

@@ -147,7 +147,27 @@ namespace FrontEnd.Helpers.Implementations
                 throw new Exception("Error al actualizar usuario: " + ex.Message, ex);
             }
         }
+
+        public LoginAPI Login(string correo, string contra)
+        {
+            try
+            {
+                HttpResponseMessage response = _ServiceRepository.PostResponse("api/Usuario/Login", new { Correo = correo, Contrasena = contra });
+                var content = response.Content.ReadAsStringAsync().Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    return JsonConvert.DeserializeObject<LoginAPI>(content);
+                }
+                else
+                {
+                    return new LoginAPI();
+                }
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }
-
-//engo un problema quiero que me digas cuantos productos hay en el sistema 
