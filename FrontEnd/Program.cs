@@ -14,11 +14,14 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     });
 
 builder.Services.AddSession();
+
 builder.Services.AddHttpClient<IServiceRepository, ServiceRepository>();
 builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
 builder.Services.AddScoped<ICategoryHelper, CategoryHelper>();
 builder.Services.AddScoped<IUsuarioHelper, UsuarioHelper>();
 builder.Services.AddScoped<IProductoHelper, ProductoHelper>();
+builder.Services.AddScoped<IRolHelper, RolHelper>();
+
 builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
 

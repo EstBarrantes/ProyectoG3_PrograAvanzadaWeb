@@ -11,10 +11,12 @@ namespace FrontEnd.Controllers
     public class UsuarioController : Controller
     {
         private readonly IUsuarioHelper _usuarioHelper;
+        private readonly IRolHelper _rolHelper;
 
-        public UsuarioController(IUsuarioHelper usuarioHelper)
+        public UsuarioController(IUsuarioHelper usuarioHelper, IRolHelper rolHelper)
         {
             _usuarioHelper = usuarioHelper;
+            _rolHelper = rolHelper;
         }
 
         // GET: Usuario/ListadoDeUsuarios
@@ -34,7 +36,10 @@ namespace FrontEnd.Controllers
         // GET: Usuario/ViewCrearUsuario
         public ActionResult ViewCrearUsuario()
         {
-            return View("ViewCrearUsuario");
+            UsuarioViewModel model = new();
+            model.listaRoles = _rolHelper.GetRoles();
+
+            return View("ViewCrearUsuario", model);
         }
 
         // POST: Usuario/ViewCrearUsuario
@@ -113,7 +118,7 @@ namespace FrontEnd.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var login = _usuarioHelper.Login(user.Correo, user.Contraseña);
+                    var login = _usuarioHelper.Login(user.Correo, user.Contrasena);
                     if (login.Token != null)
                     {
                         TokenAPI token = new TokenAPI
@@ -157,7 +162,14 @@ namespace FrontEnd.Controllers
             }
         }
 
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
+            HttpContext.Session.Remove("Token");
+
+            return RedirectToAction("Home", "Index");
+        }
 
 
 

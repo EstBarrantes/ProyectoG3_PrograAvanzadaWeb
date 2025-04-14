@@ -48,13 +48,13 @@
                         @if (isAuthenticated)
                         {
                             <li class="nav-item">
-                                <a class="btn btn-outline-danger" asp-controller="Auth" asp-action="Logout">Cerrar sesión</a>
+                                <a class="btn btn-outline-danger" asp-controller="Usuario" asp-action="Logout">Cerrar sesión</a>
                             </li>
                         }
                         else
                         {
                             <li class="nav-item">
-                                <a class="btn btn-outline-primary" asp-controller="Auth" asp-action="Login">Iniciar sesión</a>
+                                <a class="btn btn-outline-primary" asp-controller="Usuario" asp-action="Login">Iniciar sesión</a>
                             </li>
                         }
                     </ul>

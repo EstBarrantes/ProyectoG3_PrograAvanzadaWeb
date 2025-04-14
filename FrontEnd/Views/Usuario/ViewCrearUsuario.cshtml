@@ -1,7 +1,7 @@
 ﻿@model UsuarioViewModel
 
 @{
-    ViewData["Title"] = "ListadoDeUsuarios";
+    ViewData["Title"] = "Registrarse";
 
 }
 
@@ -33,19 +33,16 @@
 </style>
 
 <div class="container my-5 cuadro-usuario">
-    <h1>Crear Usuario</h1>
-
-    <h4>UsuarioAPI</h4>
+    <h1>Registrarse</h1>
     <hr />
     <div class="row">
         <div class="col-md-6">
             <form asp-action="ViewCrearUsuario">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-                <div class="form-group">
+                <div class="form-group" hidden>
                     <label asp-for="UsuarioID"></label>
                     <input asp-for="UsuarioID" class="form-control" />
-                    <span asp-validation-for="UsuarioID" class="text-danger"></span>
                 </div>
 
                 <div class="form-group">
@@ -67,23 +64,15 @@
                 </div>
 
                 <div class="form-group">
-                    <label asp-for="Contraseña"></label>
-                    <input asp-for="Contraseña" class="form-control" />
-                    <span asp-validation-for="Contraseña" class="text-danger"></span>
+                    <label asp-for="Contrasena"></label>
+                    <input asp-for="Contrasena" class="form-control" />
+                    <span asp-validation-for="Contrasena" class="text-danger"></span>
                 </div>
-
                 <div class="form-group">
-                    <label asp-for="RolId"></label>
-                    <input asp-for="RolId" class="form-control" />
+                    <label asp-for="RolId" class="control-label"></label>
+                    @Html.DropDownListFor(model => model.RolId, new SelectList(Model.listaRoles, "RolID", "NombreRol"), "--Seleccione un Rol--")
                     <span asp-validation-for="RolId" class="text-danger"></span>
                 </div>
-
-                <div class="form-group">
-                    <label asp-for="FechaRegistro"></label>
-                    <input asp-for="FechaRegistro" class="form-control" />
-                    <span asp-validation-for="FechaRegistro" class="text-danger"></span>
-                </div>
-
                 <div class="form-check">
                     <label class="form-check-label">
                         <input class="form-check-input" asp-for="Activo" /> @Html.DisplayNameFor(model => model.Activo)
@@ -109,9 +98,7 @@
         </div>
     </div>
 
-    <div class="mt-3">
-        <a asp-action="Index" class="text-white">Volver a la lista</a>
-    </div>
+    @Html.ActionLink("Volver al Menu Principal", "Index","Home")
 </div>
 
 @section Scripts {
