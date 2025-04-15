@@ -66,6 +66,8 @@ builder.Services.AddScoped<IUsuarioDAL, UsuarioDAL>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<IProductoDAL, ProductoDAL>();
 builder.Services.AddScoped<IProductoService, ProductoService>();
+builder.Services.AddScoped<IFacturaDAL, FacturaDAL>();
+builder.Services.AddScoped<IFacturaService, FacturaService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 #endregion
 
