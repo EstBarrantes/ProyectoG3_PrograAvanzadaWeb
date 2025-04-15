@@ -12,7 +12,12 @@
         color: white;
     }
 </style>
+@{
+    @inject IHttpContextAccessor HttpContextAccessor
 
+    var user = HttpContextAccessor.HttpContext?.User;
+    var isAdmin = user.IsInRole("Administrador");
+}
 <div class="container my-5 cuadro-detalles">
     <h1>Details</h1>
 
@@ -71,7 +76,10 @@
         </dl>
     </div>
     <div>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.ProductoId }) |
+        @if (isAdmin)
+        {
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ProductoId })
+        }
         <a asp-action="Index">Back to List</a>
     </div>
 </div>

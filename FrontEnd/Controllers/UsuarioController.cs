@@ -125,21 +125,18 @@ namespace FrontEnd.Controllers
                     var login = _usuarioHelper.Login(user.Correo, user.Contrasena);
                     if (login.Token != null)
                     {
+                        string RolName = _rolHelper.GetRol(login.RolId).NombreRol ?? "";
                         TokenAPI token = new TokenAPI
                         {
                             Token = login.Token.Token,
                             Expiration = login.Token.Expiration
                         };
                         HttpContext.Session.SetString("Token", token.Token);
-
-
-
-
                         var claims = new List<Claim>()
                         {
                             new Claim(ClaimTypes.NameIdentifier, login.Correo as string),
                             new Claim(ClaimTypes.Name, login.Correo as string),
-                            new Claim(ClaimTypes.Role, login.Rol?.ToString() ?? "")
+                            new Claim(ClaimTypes.Role, RolName)
                         };
 
                         var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);

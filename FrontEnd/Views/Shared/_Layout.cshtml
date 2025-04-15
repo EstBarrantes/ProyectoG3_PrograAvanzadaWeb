@@ -13,11 +13,16 @@
 
 </head>
 <body>
-    @using Microsoft.AspNetCore.Http
-    @inject IHttpContextAccessor HttpContextAccessor
+    
 
     @{
-        var isAuthenticated = HttpContextAccessor.HttpContext.User.Identity.IsAuthenticated;
+        @using Microsoft.AspNetCore.Http
+        @inject IHttpContextAccessor HttpContextAccessor
+        @using System.Security.Claims
+
+        var user = HttpContextAccessor.HttpContext?.User;
+        var isAuthenticated = user?.Identity?.IsAuthenticated ?? false;
+        var isAdmin = user.IsInRole("Administrador");
     }
 
 
@@ -35,14 +40,33 @@
                             <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Category" asp-action="Index">Categorías</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Usuario" asp-action="ListadoDeUsuarios">Usuarios</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-controller="Producto" asp-action="Index">Productos</a>
                         </li>
+                        <li>
+                            @* Falta que aparesca el boton *@
+                            <button class="btn btn-dark position-fixed bottom-0 end-0 m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas">
+                                <i class="bi bi-cart"></i>
+                            </button>
+                            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="carritoOffcanvas">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title">Carrito</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                                </div>
+                                <div class="offcanvas-body" id="carrito">
+                                </div>
+                            </div>
+                        </li>
+
+
+                        @if(isAdmin)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Category" asp-action="Index">Categorías</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Usuario" asp-action="ListadoDeUsuarios">Usuarios</a>
+                            </li>
+                        }
                         
                     </ul>
 

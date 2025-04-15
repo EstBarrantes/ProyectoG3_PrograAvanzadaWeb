@@ -26,8 +26,9 @@ namespace BackEnd.Services.Implementations
             {
                 new Claim(ClaimTypes.Name, user.Correo),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim(ClaimTypes.Role, rol?.ToString() ?? "")
+                new Claim(ClaimTypes.Role, rol?.NombreRol ?? "")
             };
+
 
             var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"]));
 

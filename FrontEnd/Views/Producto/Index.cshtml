@@ -7,44 +7,54 @@
 
 <style>
     .card-producto {
-        background-color: rgba(0, 0, 0, 0.75);
-        color: white;
-        border: none;
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-        transition: transform 0.2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
     }
 
-        .card-producto:hover {
-            transform: scale(1.02);
-        }
+    .card-producto:hover {
+    transform: scale(1.02);
+    }
 
-        .card-producto img {
-            object-fit: cover;
-            height: 200px;
-            border-radius: 10px 10px 0 0;
-        }
+    .card-producto img {
+    object-fit: cover;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    }
 
     .card-title {
-        font-size: 1.2rem;
-        font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: bold;
     }
 
     .btn-action {
-        margin: 0 3px;
+    margin: 0 3px;
     }
 
     .titulo-productos {
-        color: #1a1a1a;
+    color: #1a1a1a;
     }
 </style>
 
+@{
+    @inject IHttpContextAccessor HttpContextAccessor
+
+    var user = HttpContextAccessor.HttpContext?.User;
+    var isAdmin = user.IsInRole("Administrador");
+}
+
 <div class="container my-4">
     <h2 class="mb-4 titulo-productos"><i class="bi bi-box-seam"></i> Catálogo de Productos</h2>
-
-    <div class="mb-3">
-        <a asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i> Crear nuevo producto</a>
-    </div>
+    @if(isAdmin)
+    {
+        <div class="mb-3">
+            <a asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i> Crear nuevo producto</a>
+        </div>
+    }
+    
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
         @foreach (var item in Model)
@@ -59,10 +69,9 @@
                         <p class="card-text mb-1">Descuento: @item.Descuento%</p>
                         <p class="card-text text-muted" style="font-size: 0.85rem;">Agregado: @item.FechaAgregado.ToShortDateString()</p>
                     </div>
+
                     <div class="card-footer bg-transparent border-0 d-flex justify-content-between">
-                        <a asp-action="Edit" asp-route-id="@item.ProductoId" class="btn btn-primary btn-sm btn-action">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
+                        
                         <a asp-action="Details" asp-route-id="@item.ProductoId" class="btn btn-info btn-sm btn-action">
                             <i class="bi bi-eye"></i>
                         </a>
@@ -86,7 +95,20 @@
                         </div>
 
 
+                        
+                        @if (isAdmin)
+                        {
+                            <a asp-action="Edit" asp-route-id="@item.ProductoId" class="btn btn-primary btn-sm btn-action">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.ProductoId" class="btn btn-danger btn-sm btn-action">
+                                <i class="bi bi-trash"></i>
+                            </a>
+
+                        }
                     </div>
+                    
+                    
                 </div>
             </div>
         }
