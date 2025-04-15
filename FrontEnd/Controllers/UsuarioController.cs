@@ -23,6 +23,9 @@ namespace FrontEnd.Controllers
         public ActionResult ListadoDeUsuarios()
         {
             var usuarios = _usuarioHelper.GetUsuarios();
+            usuarios.ForEach(
+                x => x.RolName = _rolHelper.GetRol(x.RolId).NombreRol
+            );
             return View("ListadoDeUsuarios", usuarios);
         }
 

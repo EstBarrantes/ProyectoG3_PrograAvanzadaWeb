@@ -87,7 +87,7 @@ namespace BackEnd.Controllers
                     var jwtToken = TokenService.GenerateToken(usuario, rol);
 
                     usuario.Token = jwtToken;
-                    usuario.RolID = rol.RolID;
+                    usuario.RolId = rol.RolID;
                     //usuario.Correo = user.UserName; //creo que no ocupo esta linea?
 
 
@@ -104,7 +104,7 @@ namespace BackEnd.Controllers
                     var jwtToken = TokenService.GenerateToken(usuario, rol);
 
                     usuario.Token = jwtToken;
-                    usuario.RolID = rol.RolID;
+                    usuario.RolId = rol.RolID;
                     //usuario.Correo = user.UserName; //creo que no ocupo esta linea?
 
 
@@ -135,7 +135,7 @@ namespace BackEnd.Controllers
             {
                 Correo = model.Correo,
                 Contrasena = hashedPassword,
-                RolID = model.RolID,
+                RolId = model.RolId,
                 Nombre = model.Nombre,
                 Apellido = model.Apellido,
                 FechaRegistro = DateTime.Now,

@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Registrarse";
- 
+
 }
 
 
@@ -72,7 +72,13 @@
                     <label asp-for="RolId" class="control-label"></label>
                     @Html.DropDownListFor(model => model.RolId, new SelectList(Model.listaRoles, "RolId", "NombreRol"), "--Seleccione un Rol--")
                     <span asp-validation-for="RolId" class="text-danger"></span>
+                    @* <label asp-for="RolId" class="control-label"></label>
+                    <select asp-for="RolId" asp-items="@(new SelectList(Model.listaRoles,"RolId", "NombreRol" ))" class="form-control">
+                        <option value="0">--Seleccione un Rol--</option>
+                        </select>
+                    <span asp-validation-for="RolId" class="text-danger"></span> *@
                 </div>
+
                 <div class="form-check">
                     <label class="form-check-label">
                         <input class="form-check-input" asp-for="Activo" /> @Html.DisplayNameFor(model => model.Activo)
@@ -98,11 +104,11 @@
         </div>
     </div>
 
-    @Html.ActionLink("Volver al Menu Principal", "Index","Home")
+                    @Html.ActionLink("Volver al Menu Principal", "Index","Home")
 </div>
 
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+                    @section Scripts {
+                    @{
+                        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+                    }
 }
