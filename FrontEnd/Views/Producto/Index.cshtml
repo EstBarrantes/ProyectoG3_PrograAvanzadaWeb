@@ -46,17 +46,17 @@
         <a asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i> Crear nuevo producto</a>
     </div>
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 p-3 border bg-light ">
         @foreach (var item in Model)
         {
             <div class="col">
-                <div class="card card-producto h-100">
+                <div class="card card-producto h-100 bg-light">
                     <img src="@item.ImagenUrl" class="card-img-top" alt="@item.Nombre" onerror="this.src='/img/no-image.png';" />
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">@item.Nombre</h5>
-                        <p class="card-text mb-1">Categoría: <strong>@item.CategoriaNombre</strong></p>
-                        <p class="card-text mb-1">Precio: <strong>$@item.Precio</strong></p>
-                        <p class="card-text mb-1">Descuento: @item.Descuento%</p>
+                    <div class="card-body d-flex flex-column  ">
+                        <h5 class="card-title  fw-bold text-primary">@item.Nombre</h5>
+                        <p class="card-text mb-1  text-muted">Categoría: <strong>@item.CategoriaNombre</strong></p>
+                        <p class="card-text mb-1 text-muted">Precio: <strong>$@item.Precio</strong></p>
+                        <p class="card-text mb-1 text-muted">Descuento: @item.Descuento%</p>
                         <p class="card-text text-muted" style="font-size: 0.85rem;">Agregado: @item.FechaAgregado.ToShortDateString()</p>
                     </div>
                     <div class="card-footer bg-transparent border-0 d-flex justify-content-between">
