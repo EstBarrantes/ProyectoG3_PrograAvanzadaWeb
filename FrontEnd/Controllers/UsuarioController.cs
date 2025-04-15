@@ -30,8 +30,9 @@ namespace FrontEnd.Controllers
         public ActionResult Details(int id)
         {
             var usuario = _usuarioHelper.GetUsuario(id);
-            return View("ListadoDeUsuarios", usuario); // O crear una vista Details.cshtml si se desea
+            return View("Details", usuario);
         }
+
 
         // GET: Usuario/ViewCrearUsuario
         public ActionResult ViewCrearUsuario()

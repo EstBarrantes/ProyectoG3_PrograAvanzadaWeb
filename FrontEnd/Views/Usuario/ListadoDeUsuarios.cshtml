@@ -1,13 +1,12 @@
-﻿@model IEnumerable<FrontEnd.ApiModels.UsuarioAPI>
+﻿@model IEnumerable<FrontEnd.Models.UsuarioViewModel>
 
 @{
     ViewData["Title"] = "ListadoDeUsuarios";
-    Layout = "~/Views/_ViewImports.cshtml";
 }
 
 <style>
     .cuadro-tabla {
-        background-color: rgba(0, 255, 255, 0.2); /* celeste claro semi-transparente */
+        background-color: rgba(0, 255, 255, 0.2);
         padding: 30px;
         border-radius: 12px;
         color: #000;
@@ -26,22 +25,32 @@
 
         .cuadro-tabla th, .cuadro-tabla td {
             vertical-align: middle;
+            text-align: center;
         }
 
-        .cuadro-tabla a {
-            color: #0d6efd;
+        .cuadro-tabla a.btn {
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 6px;
         }
 
-            .cuadro-tabla a:hover {
-                text-decoration: underline;
-            }
+        .cuadro-tabla a.btn-sm {
+            font-size: 0.85rem;
+        }
+
+        .cuadro-tabla .acciones {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+        }
 </style>
 
 <div class="container my-5 cuadro-tabla">
     <h1>Listado de Usuarios</h1>
 
     <p>
-        <a asp-action="Create" class="btn btn-success">Crear nuevo</a>
+        <a asp-action="ViewCrearUsuario" class="btn btn-success">+ Crear nuevo</a>
     </p>
 
     <table class="table table-bordered table-hover bg-white text-dark">
@@ -74,10 +83,16 @@
                     <td>@Html.DisplayFor(modelItem => item.Activo)</td>
                     <td>@Html.DisplayFor(modelItem => item.Direccion)</td>
                     <td>@Html.DisplayFor(modelItem => item.Telefono)</td>
-                    <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.UsuarioID }) |
-                        @Html.ActionLink("Details", "Details", new { id = item.UsuarioID }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.UsuarioID })
+                    <td class="acciones">
+                        <a asp-action="EditarUsuario" asp-route-id="@item.UsuarioID" class="btn btn-outline-primary btn-sm">
+                            ✏️ Editar
+                        </a>
+                        <a asp-action="Details" asp-route-id="@item.UsuarioID" class="btn btn-outline-info btn-sm">
+                            📄 Detalles
+                        </a>
+                        <a asp-action="EliminarUsuario" asp-route-id="@item.UsuarioID" class="btn btn-outline-danger btn-sm">
+                            🗑️ Eliminar
+                        </a>
                     </td>
                 </tr>
             }
