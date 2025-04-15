@@ -9,7 +9,7 @@
         public string Correo { get; set; }
         public string Contrasena { get; set; }
      
-        public int RolId { get; internal set; }
+        public int RolId { get; set; }
         public DateTime FechaRegistro { get; set; }
         public bool Activo { get; set; }
         public string Direccion { get; set; }

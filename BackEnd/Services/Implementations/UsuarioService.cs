@@ -23,7 +23,7 @@ namespace BackEnd.Services.Implementations
                 Apellido = usuario.Apellido,
                 Correo = usuario.Correo,
                 Contraseña = usuario.Contrasena,
-                RolID = usuario.RolID,
+                RolID = usuario.RolId,
                 FechaRegistro = usuario.FechaRegistro,
                 Activo = usuario.Activo,
                 Direccion = usuario.Direccion,
@@ -40,7 +40,7 @@ namespace BackEnd.Services.Implementations
                 Apellido = usuario.Apellido,
                 Correo = usuario.Correo,
                 Contrasena = usuario.Contraseña,
-                RolID = usuario.RolID,
+                RolId = usuario.RolID,
                
                 FechaRegistro = usuario.FechaRegistro,
                 Activo = usuario.Activo,
@@ -78,7 +78,7 @@ namespace BackEnd.Services.Implementations
         public List<UsuarioDTO> GetUsuarios()
         {
             var result = _unidadDeTrabajo.UsuarioDAL.GetAll();
-            List<UsuarioDTO> usuarios = new List<UsuarioDTO>();
+            List<UsuarioDTO> usuarios = new();
             foreach (var item in result)
             {
                 usuarios.Add(ConvertirDTO(item));
