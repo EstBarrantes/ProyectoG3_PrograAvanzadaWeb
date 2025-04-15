@@ -16,6 +16,7 @@ namespace DAL.Implementations
         public IUsuarioDAL UsuarioDAL { get; set; }
         
         public IProductoDAL ProductoDAL { get; set; }
+        public IFacturaDAL FacturaDAL { get; set; }
 
         private G3prograavanzadaContext _proyectoContext;
 
@@ -23,7 +24,8 @@ namespace DAL.Implementations
                         IRolDAL rolDAL,
                         ICategoriaDAL categoriaDAL,
                         IUsuarioDAL usuarioDAL,
-                        IProductoDAL productoDAL)
+                        IProductoDAL productoDAL,
+                        IFacturaDAL  facturaDAL)
         {
             
             this._proyectoContext = proyectoContext;
@@ -31,6 +33,7 @@ namespace DAL.Implementations
             this.CategoriaDAL = categoriaDAL;
             this.ProductoDAL = productoDAL;
             UsuarioDAL = usuarioDAL;
+            this.FacturaDAL = facturaDAL;
         }
 
 
