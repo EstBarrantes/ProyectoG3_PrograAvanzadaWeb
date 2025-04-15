@@ -1,46 +1,75 @@
 ﻿@model UsuarioViewModel
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Iniciar sesión";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Opcional. Si NO quieres usar layout, pon "null"
 }
 
-<!DOCTYPE html>
+<style>
+    .cuadro-login {
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 40px;
+        border-radius: 12px;
+        color: white;
+        max-width: 400px;
+        margin: auto;
+        margin-top: 80px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Login</title>
-</head>
-<body>
+        .cuadro-login label {
+            color: #fff;
+        }
 
-<h4>SingIn</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Login">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Correo" class="control-label"></label>
-                    <input asp-for="Correo" class="form-control" />
-                    <span asp-validation-for="Correo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Contrasena" class="control-label"></label>
-                    <input asp-for="Contrasena" class="form-control" />
-                    <span asp-validation-for="Contrasena" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Login" class="btn btn-primary" />
-            </div>
-        </form>
-            @Html.ActionLink("Register", "ViewCrearUsuario")
+        .cuadro-login .form-control {
+            background-color: #f8f9fa;
+            color: black;
+        }
 
-    </div>
+        .cuadro-login .btn {
+            width: 100%;
+        }
+
+        .cuadro-login a {
+            color: #0dcaf0;
+        }
+
+            .cuadro-login a:hover {
+                text-decoration: underline;
+            }
+</style>
+
+<div class="cuadro-login">
+    <h2 class="text-center mb-4">Iniciar Sesión</h2>
+
+    <form asp-action="Login" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Correo" class="control-label">Correo electrónico</label>
+            <input asp-for="Correo" class="form-control" />
+            <span asp-validation-for="Correo" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Contrasena" class="control-label">Contraseña</label>
+            <input asp-for="Contrasena" class="form-control" type="password" />
+            <span asp-validation-for="Contrasena" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <input type="submit" value="Ingresar" class="btn btn-primary" />
+        </div>
+
+        <div class="text-center">
+            ¿No tienes cuenta?
+            @Html.ActionLink("Registrarse", "ViewCrearUsuario", "Usuario")
+        </div>
+    </form>
 </div>
 
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
-</body>
-</html>
