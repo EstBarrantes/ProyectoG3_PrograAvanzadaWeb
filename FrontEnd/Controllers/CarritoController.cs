@@ -18,11 +18,11 @@ public class CarritoController : Controller
     }
 
     [HttpPost]
-    public IActionResult Agregar(int id, string nombre, decimal precio, int cantidad, string returnUrl)
+    public IActionResult Agregar(int id, string nombre, decimal precio, int cantidad, decimal descuento, string returnUrl)
     {
         var carrito = GetCarrito();
         var item = carrito.FirstOrDefault(p => p.Id== id);
-        if (item != null)
+        if (item != null && cantidad > 0)
             item.Cantidad += cantidad;
         else
             carrito.Add(new CarritoViewModel
@@ -30,7 +30,8 @@ public class CarritoController : Controller
                 Id= id,
                 Nombre_Producto = nombre,
                 Precio = precio,
-                Cantidad = cantidad
+                Cantidad = cantidad,
+                Descuento = descuento
             });
 
         SaveCarrito(carrito);

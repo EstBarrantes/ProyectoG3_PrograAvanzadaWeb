@@ -9,6 +9,7 @@ namespace FrontEnd.Helpers.Interfaces
 
         List<UsuarioViewModel> GetUsuarios();
         UsuarioViewModel GetUsuario(int? id);
+        UsuarioViewModel GetUsuarioByCorreo(string correo);
         UsuarioViewModel Add(UsuarioViewModel usuario);
         UsuarioViewModel Update(UsuarioViewModel usuario);
         void Delete(int id);

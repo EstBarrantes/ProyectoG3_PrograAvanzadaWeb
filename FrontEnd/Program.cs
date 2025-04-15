@@ -22,6 +22,7 @@ builder.Services.AddScoped<ICategoryHelper, CategoryHelper>();
 builder.Services.AddScoped<IUsuarioHelper, UsuarioHelper>();
 builder.Services.AddScoped<IProductoHelper, ProductoHelper>();
 builder.Services.AddScoped<IRolHelper, RolHelper>();
+builder.Services.AddScoped<IFacturaHelper, FacturaHelper>();
 
 builder.Services.AddHttpContextAccessor();
 var app = builder.Build();

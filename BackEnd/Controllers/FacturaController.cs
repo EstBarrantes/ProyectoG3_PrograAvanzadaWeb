@@ -35,6 +35,7 @@ namespace BackEnd.Controllers
         [HttpPost]
         public void Post([FromBody] FacturaDTO rol)
         {
+
             _FacturaService.CreateFactura(rol);
         }
 

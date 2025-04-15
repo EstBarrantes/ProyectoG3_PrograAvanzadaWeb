@@ -1,0 +1,104 @@
+﻿@model FrontEnd.Models.FacturaViewModel
+@{
+    ViewData["Title"] = "Crear Producto";
+    ViewData["BodyClass"] = "producto-fondo";
+}
+
+<style>
+    .form-container {
+        background-color: rgba(0,0,0,0.7);
+        padding: 30px;
+        border-radius: 10px;
+        color: white;
+    }
+
+        .form-container label {
+            font-weight: 500;
+        }
+
+        .form-container input,
+        .form-container select,
+        .form-container textarea {
+            background-color: #f8f9fa;
+            color: black;
+        }
+</style>
+<h2>Datos de Factura</h2>
+
+<form asp-action="ConfirmarCompra" method="post">
+    <div class="mb-3">
+        <label for="MetodoPago" class="form-label">Método de Pago</label>
+        <select asp-for="MetodoPago" class="form-select" required>
+            <option value="">-- Selecciona un método --</option>
+            <option value="Transferencia">Transferencia</option>
+            <option value="SINPE">SINPE</option>
+            <option value="TarjetaCredito">Tarjeta de crédito</option>
+            <option value="TarjetaDebito">Tarjeta de débito</option>
+            <option value="ContraEntrega">Contra entrega</option>
+        </select>
+        <span asp-validation-for="MetodoPago" class="text-danger"></span>
+    </div>
+
+    <h4>Resumen del Pedido</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.DetalleFacturas.Count; i++)
+            {
+                <tr>
+                    <td>
+                        @Model.DetalleFacturas.ElementAt(i).ProductoId
+                        <input type="hidden" name="DetalleFacturas[@i].ProductoId" value="@Model.DetalleFacturas.ElementAt(i).ProductoId" />
+                    </td>
+                    <td>
+                        @Model.DetalleFacturas.ElementAt(i).Cantidad
+                        <input type="hidden" name="DetalleFacturas[@i].Cantidad" value="@Model.DetalleFacturas.ElementAt(i).Cantidad" />
+                    </td>
+                    <td>
+                        $@Model.DetalleFacturas.ElementAt(i).PrecioUnitario
+                        <input type="hidden" name="DetalleFacturas[@i].PrecioUnitario" value="@Model.DetalleFacturas.ElementAt(i).PrecioUnitario" />
+                    </td>
+                    <td>
+                        $@Model.DetalleFacturas.ElementAt(i).Subtotal
+                        <input type="hidden" name="DetalleFacturas[@i].Subtotal" value="@Model.DetalleFacturas.ElementAt(i).Subtotal" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <input type="hidden" asp-for="Subtotal" />
+    <input type="hidden" asp-for="Descuento" />
+    <input type="hidden" asp-for="Total" />
+    <input type="hidden" asp-for="Fecha" />
+    <input type="hidden" asp-for="Estado" />
+
+    <div class="mb-3">
+        <label asp-for="Subtotal" class="form-label">Subtotal</label>
+        <input asp-for="Subtotal" class="form-control" readonly />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Descuento" class="form-label">Descuento</label>
+        <input asp-for="Descuento" class="form-control" readonly />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Total" class="form-label">Total</label>
+        <input asp-for="Total" class="form-control" readonly />
+    </div>
+    <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+</form>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,38 @@
+﻿@model FrontEnd.Models.FacturaViewModel
+@{
+    ViewData["Title"] = "Confirmacion de la Compra";
+    ViewData["BodyClass"] = "producto-fondo";
+}
+
+<style>
+    .form-container {
+        background-color: rgba(0,0,0,0.7);
+        padding: 30px;
+        border-radius: 10px;
+        color: white;
+    }
+
+        .form-container label {
+            font-weight: 500;
+        }
+
+        .form-container input,
+        .form-container select,
+        .form-container textarea {
+            background-color: #f8f9fa;
+            color: black;
+        }
+</style>
+
+
+<h2>¡Gracias por tu compra!</h2>
+<p>Pronto recibirás un correo con los detalles de tu pedido.</p>
+<a href="/" class="btn btn-primary">Volver al inicio</a>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

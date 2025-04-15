@@ -83,11 +83,10 @@
                                 <input type="hidden" name="id" value="@item.ProductoId" />
                                 <input type="hidden" name="nombre" value="@item.Nombre" />
                                 <input type="hidden" name="precio" value="@item.Precio" />
-
                                 <div class="input-group input-group-sm w-auto">
                                     <input type="number" name="cantidad" class="form-control text-center" value="0" min="0" style="width: 50px;" />
                                 </div>
-
+                                <input type="hidden" name="descuento" value="@item.Descuento" />
                                 <button type="submit" class="btn btn-warning btn-sm">
                                     <i class="bi bi-cart-plus"></i>
                                 </button>

@@ -80,7 +80,7 @@ namespace FrontEnd.Helpers.Implementations
 
         public FacturaViewModel Add(FacturaViewModel ViewModel)
         {
-            HttpResponseMessage responseMessage = _ServiceRepository.PostResponse("api/Categoria", Convertir(ViewModel));
+            HttpResponseMessage responseMessage = _ServiceRepository.PostResponse("api/Factura", Convertir(ViewModel));
             if (responseMessage != null)
             {
                 var content = responseMessage.Content;
@@ -91,17 +91,17 @@ namespace FrontEnd.Helpers.Implementations
 
         public void Delete(int id)
         {
-            HttpResponseMessage responseMessage = _ServiceRepository.DeleteResponse("api/Categoria/" + id.ToString());
+            HttpResponseMessage responseMessage = _ServiceRepository.DeleteResponse("api/Factura/" + id.ToString());
             if (responseMessage != null)
             {
                 var content = responseMessage.Content;
             }
         }
 
-        public List<FacturaViewModel> GetCategories()
+        public List<FacturaViewModel> GetFacturas()
         {
             List<FacturaAPI> data = new List<FacturaAPI>();
-            HttpResponseMessage responseMessage = _ServiceRepository.GetResponse("api/Categoria");
+            HttpResponseMessage responseMessage = _ServiceRepository.GetResponse("api/Factura");
 
 
             if (responseMessage != null)
@@ -124,7 +124,7 @@ namespace FrontEnd.Helpers.Implementations
         {
 
             FacturaAPI data = new FacturaAPI();
-            HttpResponseMessage responseMessage = _ServiceRepository.GetResponse("api/Categoria/" + id.ToString());
+            HttpResponseMessage responseMessage = _ServiceRepository.GetResponse("api/Factura/" + id.ToString());
 
 
             if (responseMessage != null)
@@ -140,7 +140,7 @@ namespace FrontEnd.Helpers.Implementations
 
         public FacturaViewModel Update(FacturaViewModel factura)
         {
-            HttpResponseMessage responseMessage = _ServiceRepository.PutResponse("api/Categoria", Convertir(factura));
+            HttpResponseMessage responseMessage = _ServiceRepository.PutResponse("api/Factura", Convertir(factura));
             if (responseMessage != null)
             {
                 var content = responseMessage.Content;

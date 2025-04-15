@@ -35,12 +35,25 @@ namespace BackEnd.Controllers
             return _usuarioService.GetUsuarios();
         }
 
-        // GET api/Usuario/5
-        [HttpGet("{id}")]
-        public UsuarioDTO Get(int id)
+        [HttpGet("{identifier}")]
+        public async Task<ActionResult<UsuarioDTO>> GetUsuario(string identifier)
         {
-            return _usuarioService.GetUsuarioById(id);
+            if (int.TryParse(identifier, out int id))
+            {
+                var usuario = _usuarioService.GetUsuarioById(id);
+                if (usuario == null)
+                    return NotFound();
+                return Ok(usuario);
+            }
+            else
+            {
+                var usuario = await _usuarioService.GetUsuarioByCorreo(identifier);
+                if (usuario == null)
+                    return NotFound();
+                return Ok(usuario);
+            }
         }
+
 
         // POST api/Usuario
         [HttpPost]

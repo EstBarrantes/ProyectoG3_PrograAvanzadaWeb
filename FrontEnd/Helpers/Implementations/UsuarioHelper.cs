@@ -103,6 +103,27 @@ namespace FrontEnd.Helpers.Implementations
             }
         }
 
+        public UsuarioViewModel GetUsuarioByCorreo(string correo)
+        {
+            try
+            {
+                UsuarioAPI data = new UsuarioAPI();
+                HttpResponseMessage responseMessage = _ServiceRepository.GetResponse("api/Usuario/" + correo);
+
+                if (responseMessage != null)
+                {
+                    var content = responseMessage.Content.ReadAsStringAsync().Result;
+                    data = JsonConvert.DeserializeObject<UsuarioAPI>(content) ?? new UsuarioAPI();
+                }
+
+                return Convertir(data);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al obtener usuario con el correo {correo}: {ex.Message}", ex);
+            }
+        }
+
         public List<UsuarioViewModel> GetUsuarios()
         {
             try

@@ -5,7 +5,7 @@ namespace FrontEnd.Helpers.Interfaces
     public interface IFacturaHelper
     {
 
-        List<FacturaViewModel> GetCategories();
+        List<FacturaViewModel> GetFacturas();
 
         FacturaViewModel GetFactura(int? id);
         FacturaViewModel Add(FacturaViewModel factura);

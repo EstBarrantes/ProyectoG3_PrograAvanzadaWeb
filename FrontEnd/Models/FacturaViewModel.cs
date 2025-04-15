@@ -17,5 +17,8 @@ namespace FrontEnd.Models
         public string MetodoPago { get; set; } = null!;
 
         public ICollection<DetalleFacturaViewModel> DetalleFacturas { get; set; } = new List<DetalleFacturaViewModel>();
+        public decimal Subtotal { get; set; }
+        public decimal Descuento { get; set; }
+
     }
 }
