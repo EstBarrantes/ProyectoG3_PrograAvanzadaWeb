@@ -1,4 +1,8 @@
-USE G3PROGRAAVANZADA;
+
+
+
+
+
 INSERT INTO Rol (NombreRol) VALUES ('Usuario');
 INSERT INTO Rol (NombreRol) VALUES ('Administrador');
 
@@ -30,16 +34,16 @@ INSERT INTO Categoria (Nombre) VALUES
 
 -- Inserción en la tabla Producto
 INSERT INTO Producto (Nombre, Descripcion, Precio, CategoriaID, ImagenURL, Descuento) VALUES 
-('Laptop', 'Laptop de alto rendimiento', 1200.00, 1, 'laptop.jpg', 0),
-('Televisor', 'Televisor 4K de 55 pulgadas', 800.00, 1, 'tv.jpg', 0),
-('Sofá', 'Sofá de tres plazas', 500.00, 9, 'sofa.jpg', 50),
-('Zapatillas', 'Zapatillas deportivas', 100.00, 4, 'zapatillas.jpg', 10),
-('Perfume', 'Perfume floral', 60.00, 6, 'perfume.jpg', 0),
-('Libro', 'Novela de ciencia ficción', 30.00, 8, 'libro.jpg', 5),
-('Coche de juguete', 'Juguete a escala', 20.00, 5, 'juguete.jpg', 0),
-('Aspiradora', 'Aspiradora potente', 250.00, 2, 'aspiradora.jpg', 15),
-('Collar para perro', 'Collar ajustable', 15.00, 10, 'collar.jpg', 0),
-('Aceite para motor', 'Aceite sintético', 40.00, 7, 'aceite.jpg', 5);
+('Laptop', 'Laptop de alto rendimiento', 1200.00, 1, 'https://www.cqnetcr.com/72888-large_default/laptop-hp-245-g7-14-amd-a4-9125-4gb-500gb-w10.jpg', 0),
+('Televisor', 'Televisor 4K de 55 pulgadas', 800.00, 1, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAzQoy-zXx5BVNSdrQWuax3ZV9WkC7NcfVw&s', 0),
+('Sofá', 'Sofá de tres plazas', 500.00, 9, 'https://walmartcr.vtexassets.com/arquivos/ids/481899/Sof-Cama-Mainstays-Con-Patas-De-Pl-stico-1-74327.jpg?v=638371068146900000', 50),
+('Zapatillas', 'Zapatillas deportivas', 100.00, 4, 'https://images-cdn.ubuy.cr/64a22f03b3ae7769e250b492-zapatos-de-hombre-zapatillas-deportivas.jpg', 10),
+('Perfume', 'Perfume floral', 60.00, 6, 'https://cdn.shortpixel.ai/spai3/q_lossy+ret_img+to_webp/holacompras.com/wp-content/uploads/2023/12/PERF-AG-SWTCNDY-2.jpg', 0),
+('Libro', 'Novela de ciencia ficción', 30.00, 8, 'https://www.comunidadbaratz.com/wp-content/uploads/Instrucciones-a-tener-en-cuenta-sobre-como-se-abre-un-libro-nuevo.jpg', 5),
+('Coche de juguete', 'Juguete a escala', 20.00, 5, 'https://walmartcr.vtexassets.com/arquivos/ids/720604/80672_01.jpg?v=638627082647630000', 0),
+('Aspiradora', 'Aspiradora potente', 250.00, 2, 'https://tienda.pequenomundo.com/media/catalog/product/1/0/10030322_03.jpg', 15),
+('Collar para perro', 'Collar ajustable', 15.00, 10, 'https://media.aldoshoes.com/v3/product/galine/970/galine_multi_970_main_rc_gy_700x889.jpg', 0),
+('Aceite para motor', 'Aceite sintético', 40.00, 7, 'https://www.recetasnestlecam.com/sites/default/files/2023-03/diferentes-tipos-de-aceite-para-cocinar_0.jpg', 5);
 
 
 -- Inserción en la tabla Inventario
@@ -80,3 +84,4 @@ INSERT INTO DetalleFactura (FacturaID, ProductoID, Cantidad, PrecioUnitario, Sub
 (7, 8, 1, 300.00, 300.00),
 (8, 7, 3, 20.00, 60.00),
 (9, 9, 6, 15.00, 90.00);
+
