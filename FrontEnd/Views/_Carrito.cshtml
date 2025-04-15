@@ -1,0 +1,27 @@
+﻿@model List<FrontEnd.Models.CarritoViewModel>
+
+@if (!Model.Any())
+{
+    <p>Ningún producto seleccionado.</p>
+}
+else
+{
+    <table class="table text-white">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Nombre_Producto</td>
+                <td>@item.Cantidad x $@item.Precio</td>
+                <td>
+                    <form method="post" asp-action="Eliminar" asp-controller="Carrito">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        <button type="submit" class="btn btn-sm btn-danger"><i class="bi bi-x-circle"></i></button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+
+    <h5>Total: $@Model.Sum(p => p.Cantidad * p.Precio)</h5>
+    <button class="btn btn-success">Comprar</button>
+}

@@ -69,9 +69,61 @@
                         <a asp-action="Delete" asp-route-id="@item.ProductoId" class="btn btn-danger btn-sm btn-action">
                             <i class="bi bi-trash"></i>
                         </a>
+                            <div class="d-flex align-items-center gap-2">
+        <div class="input-group input-group-sm w-auto">
+            <button class="btn btn-outline-secondary btn-restar" type="button">-</button>
+            <input type="number" class="form-control text-center cantidad-producto" value="0" min="1" style="width: 50px;" />
+            <button class="btn btn-outline-secondary btn-sumar" type="button">+</button>
+        </div>
+
+        <button class="btn btn-warning btn-sm btn-action btn-agregar-carrito"
+            data-id="@item.ProductoId"
+            data-nombre="@item.Nombre"
+            data-precio="@item.Precio">
+            <i class="bi bi-cart-plus"></i>
+        </button>
+    </div>
+
+
                     </div>
                 </div>
             </div>
         }
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        $(document).on('click', '.btn-sumar', function () {
+            var input = $(this).siblings('input');
+            input.val(parseInt(input.val()) + 1);
+        });
+
+        $(document).on('click', '.btn-restar', function () {
+            var input = $(this).siblings('input');
+            var val = parseInt(input.val());
+            if (val > 1) input.val(val - 1);
+        });
+
+        $('.btn-agregar-carrito').click(function () {
+            var btn = $(this);
+            var cantidad = btn.siblings('.input-group').find('.cantidad-producto').val();
+
+            $.post('/Carrito/Agregar', {
+                id: btn.data('id'),
+                nombre: btn.data('nombre'),
+                precio: btn.data('precio'),
+                cantidad: cantidad
+            }).done(function () {
+                btn.addClass('btn-success').removeClass('btn-warning');
+                btn.html('<i class="bi bi-check-circle"></i>');
+                actualizarVistaCarrito();
+            });
+        });
+
+        function actualizarVistaCarrito() {
+            $('#carritoContenido').load('Carrito');
+        }
+    });
+</script>
+
