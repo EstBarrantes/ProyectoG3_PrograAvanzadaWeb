@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="~/FrontEnd.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Views/CSS/Principal.css" asp-append-version="true" />
 
-    <!-- ✅ Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 <body>
     @using Microsoft.AspNetCore.Http
@@ -43,24 +43,10 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-controller="Producto" asp-action="Index">Productos</a>
                         </li>
-                        <li>
-                            @* Falta que aparesca el boton *@
-                            <button class="btn btn-dark position-fixed bottom-0 end-0 m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas">
-                                <i class="bi bi-cart"></i>
-                            </button>
-                            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="carritoOffcanvas">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title">Carrito</h5>
-                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-                                </div>
-                                <div class="offcanvas-body" id="carrito">
-                                </div>
-                            </div>
-                        </li>
-
-
+                        
                     </ul>
 
+                    
 
                         
 
@@ -77,6 +63,10 @@
                                 <a class="btn btn-outline-primary" asp-controller="Usuario" asp-action="Login">Iniciar sesión</a>
                             </li>
                         }
+                        <li class="nav-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="bi bi-cart"></i>
+                            Carrito
+                        </li>
                     </ul>
                     
 
@@ -105,4 +95,16 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
+<div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Carrito</h5>
+        <button type="button" class="btn-close btn-close-Black" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body" id="carritoContenido">
+        @await Component.InvokeAsync("Carrito")
+
+
+    </div>
+</div>
 </html>

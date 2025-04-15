@@ -18,7 +18,7 @@ public class CarritoController : Controller
     }
 
     [HttpPost]
-    public IActionResult Agregar(int id, string nombre, decimal precio, int cantidad)
+    public IActionResult Agregar(int id, string nombre, decimal precio, int cantidad, string returnUrl)
     {
         var carrito = GetCarrito();
         var item = carrito.FirstOrDefault(p => p.Id== id);
@@ -34,12 +34,12 @@ public class CarritoController : Controller
             });
 
         SaveCarrito(carrito);
-        return Ok();
+        return Redirect(returnUrl ?? "/");
     }
 
 
     [HttpPost]
-    public IActionResult Eliminar(int id)
+    public IActionResult Eliminar(int id, string returnUrl)
     {
         var carrito = GetCarrito();
         var item = carrito.FirstOrDefault(p => p.Id == id);
@@ -49,7 +49,7 @@ public class CarritoController : Controller
             SaveCarrito(carrito);
         }
 
-        return Ok();
+        return Redirect(returnUrl ?? "/");
     }
 
     public IActionResult Ver()
@@ -57,4 +57,10 @@ public class CarritoController : Controller
         var carrito = GetCarrito();
         return PartialView("_Carrito", carrito);
     }
+    public IActionResult Carrito()
+    {
+        var carrito = GetCarrito();
+        return PartialView("_Carrito", carrito);
+    }
+
 }
