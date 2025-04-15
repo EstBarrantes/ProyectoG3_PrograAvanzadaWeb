@@ -13,6 +13,7 @@ namespace DAL.Interfaces
        
         IUsuarioDAL UsuarioDAL { get; }
         IProductoDAL ProductoDAL { get; }
+        IFacturaDAL FacturaDAL { get; }
 
         bool Complete();
     }

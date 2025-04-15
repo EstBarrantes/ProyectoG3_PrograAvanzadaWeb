@@ -13,6 +13,6 @@ namespace FrontEnd.Helpers.Interfaces
         UsuarioViewModel Update(UsuarioViewModel usuario);
         void Delete(int id);
 
-        LoginAPI Login(string correo, string contra);
+        UsuarioAPI Login(string correo, string contra);
     }
 }

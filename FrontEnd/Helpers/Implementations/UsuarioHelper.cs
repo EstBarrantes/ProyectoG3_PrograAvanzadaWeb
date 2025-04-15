@@ -148,7 +148,7 @@ namespace FrontEnd.Helpers.Implementations
             }
         }
 
-        public LoginAPI Login(string correo, string contra)
+        public UsuarioAPI Login(string correo, string contra)
         {
             try
             {
@@ -156,11 +156,11 @@ namespace FrontEnd.Helpers.Implementations
                 var content = response.Content.ReadAsStringAsync().Result;
                 if (response.IsSuccessStatusCode)
                 {
-                    return JsonConvert.DeserializeObject<LoginAPI>(content);
+                    return JsonConvert.DeserializeObject<UsuarioAPI>(content);
                 }
                 else
                 {
-                    return new LoginAPI();
+                    return new UsuarioAPI();
                 }
 
             }

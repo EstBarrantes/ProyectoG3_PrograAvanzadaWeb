@@ -39,12 +39,22 @@
     }
 </style>
 
+@{
+    @inject IHttpContextAccessor HttpContextAccessor
+
+    var user = HttpContextAccessor.HttpContext?.User;
+    var isAdmin = user.IsInRole("Administrador");
+}
+
 <div class="container my-4">
     <h2 class="mb-4 titulo-productos"><i class="bi bi-box-seam"></i> Catálogo de Productos</h2>
+    @if (isAdmin)
+    {
+        <div class="mb-3">
+            <a asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i> Crear nuevo producto</a>
+        </div>
+    }
 
-    <div class="mb-3">
-        <a asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i> Crear nuevo producto</a>
-    </div>
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 p-3 border bg-light ">
         @foreach (var item in Model)
@@ -59,10 +69,9 @@
                         <p class="card-text mb-1 text-muted">Descuento: @item.Descuento%</p>
                         <p class="card-text text-muted" style="font-size: 0.85rem;">Agregado: @item.FechaAgregado.ToShortDateString()</p>
                     </div>
+
                     <div class="card-footer bg-transparent border-0 d-flex justify-content-between">
-                        <a asp-action="Edit" asp-route-id="@item.ProductoId" class="btn btn-primary btn-sm btn-action">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
+
                         <a asp-action="Details" asp-route-id="@item.ProductoId" class="btn btn-info btn-sm btn-action">
                             <i class="bi bi-eye"></i>
                         </a>
@@ -86,7 +95,19 @@
                         </div>
 
 
+                        @if (isAdmin)
+                        {
+                            <a asp-action="Edit" asp-route-id="@item.ProductoId" class="btn btn-primary btn-sm btn-action">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.ProductoId" class="btn btn-danger btn-sm btn-action">
+                                <i class="bi bi-trash"></i>
+                            </a>
+
+                        }
                     </div>
+
+
                 </div>
             </div>
         }

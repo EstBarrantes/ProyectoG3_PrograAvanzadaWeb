@@ -2,9 +2,12 @@
 using BackEnd.Services.Implementations;
 using BackEnd.Services.Interfaces;
 using Entities.Entities;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Security.Claims;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -18,7 +21,7 @@ namespace BackEnd.Controllers
         private readonly IRolService _rolService;
         private ITokenService TokenService;
 
-        public UsuarioController(IUsuarioService usuarioService, IRolService rolService,ITokenService tokenService)
+        public UsuarioController(IUsuarioService usuarioService, IRolService rolService, ITokenService tokenService)
         {
             _usuarioService = usuarioService;
             _rolService = rolService;
@@ -90,7 +93,6 @@ namespace BackEnd.Controllers
                     usuario.RolId = rol.RolID;
                     //usuario.Correo = user.UserName; //creo que no ocupo esta linea?
 
-
                     return Ok(usuario);
                 }
             }
@@ -107,12 +109,11 @@ namespace BackEnd.Controllers
                     usuario.RolId = rol.RolID;
                     //usuario.Correo = user.UserName; //creo que no ocupo esta linea?
 
-
                     return Ok(usuario);
                 }
             }
 
-                
+
             return Unauthorized();
         }
 
