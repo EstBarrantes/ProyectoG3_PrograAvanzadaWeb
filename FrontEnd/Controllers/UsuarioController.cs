@@ -54,7 +54,7 @@ namespace FrontEnd.Controllers
             try
             {
                 _usuarioHelper.Add(usuario);
-                return RedirectToAction("ListadoDeUsuarios");
+                return RedirectToAction("Index", "Home");
             }
             catch
             {

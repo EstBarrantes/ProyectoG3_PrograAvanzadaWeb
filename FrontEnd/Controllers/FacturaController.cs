@@ -28,7 +28,8 @@ namespace FrontEnd.Controllers
         // GET: FacturaController
         public ActionResult Index()
         {
-            return View(_facturaHelper.GetFacturas());
+            var data = _facturaHelper.GetFacturas();
+            return View();
         }
 
         public IActionResult GenerarFactura()
