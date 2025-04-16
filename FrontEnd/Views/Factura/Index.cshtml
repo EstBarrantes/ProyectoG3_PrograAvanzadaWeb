@@ -11,53 +11,53 @@
 
 <style>
     .bg-soft-blue {
-        background-color: #e6f0ff;
+    background-color: #e6f0ff;
     }
 
     .bg-soft-green {
-        background-color: #e6ffed;
+    background-color: #e6ffed;
     }
 
     .bg-soft-yellow {
-        background-color: #fffbe6;
+    background-color: #fffbe6;
     }
 
     .bg-soft-pink {
-        background-color: #ffe6f0;
+    background-color: #ffe6f0;
     }
 
     .bg-soft-purple {
-        background-color: #f3e6ff;
+    background-color: #f3e6ff;
     }
 
     .bg-soft-orange {
-        background-color: #fff1e6;
+    background-color: #fff1e6;
     }
 
     .card-title {
-        font-weight: 600;
-        font-size: 1.1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
     }
 
     .card-subtitle {
-        font-size: 0.95rem;
+    font-size: 0.95rem;
     }
 
     .card {
-        transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     }
 
-        .card:hover {
-            transform: scale(1.02);
-        }
+    .card:hover {
+    transform: scale(1.02);
+    }
 
     .detalle-factura {
-        font-size: 0.9rem;
+    font-size: 0.9rem;
     }
 
-        .detalle-factura th, .detalle-factura td {
-            padding: 4px 8px;
-        }
+    .detalle-factura th, .detalle-factura td {
+    padding: 4px 8px;
+    }
 </style>
 
 <h1 class="mb-4">Facturas Registradas</h1>
@@ -90,27 +90,31 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @for (int i = 0; i < factura.DetalleFacturas.Count; i++)
+                            @if(factura.DetalleFacturas !=null)
                             {
-                                <tr>
-                                    <td>
-                                        @factura.DetalleFacturas.ElementAt(i).ProductoId
-                                        <input type="hidden" name="DetalleFacturas[@i].ProductoId" value="@factura.DetalleFacturas.ElementAt(i).ProductoId" />
-                                    </td>
-                                    <td>
-                                        @factura.DetalleFacturas.ElementAt(i).Cantidad
-                                        <input type="hidden" name="DetalleFacturas[@i].Cantidad" value="@factura.DetalleFacturas.ElementAt(i).Cantidad" />
-                                    </td>
-                                    <td>
-                                        $@factura.DetalleFacturas.ElementAt(i).PrecioUnitario
-                                        <input type="hidden" name="DetalleFacturas[@i].PrecioUnitario" value="@factura.DetalleFacturas.ElementAt(i).PrecioUnitario" />
-                                    </td>
-                                    <td>
-                                        $@factura.DetalleFacturas.ElementAt(i).Subtotal
-                                        <input type="hidden" name="DetalleFacturas[@i].Subtotal" value="@factura.DetalleFacturas.ElementAt(i).Subtotal" />
-                                    </td>
-                                </tr>
+                                for (int i = 0; i < factura.DetalleFacturas.Count; i++)
+                                {
+                                    <tr>
+                                        <td>
+                                            @factura.DetalleFacturas.ElementAt(i).ProductoId
+                                            <input type="hidden" name="DetalleFacturas[@i].ProductoId" value="@factura.DetalleFacturas.ElementAt(i).ProductoId" />
+                                        </td>
+                                        <td>
+                                            @factura.DetalleFacturas.ElementAt(i).Cantidad
+                                            <input type="hidden" name="DetalleFacturas[@i].Cantidad" value="@factura.DetalleFacturas.ElementAt(i).Cantidad" />
+                                        </td>
+                                        <td>
+                                            $@factura.DetalleFacturas.ElementAt(i).PrecioUnitario
+                                            <input type="hidden" name="DetalleFacturas[@i].PrecioUnitario" value="@factura.DetalleFacturas.ElementAt(i).PrecioUnitario" />
+                                        </td>
+                                        <td>
+                                            $@factura.DetalleFacturas.ElementAt(i).Subtotal
+                                            <input type="hidden" name="DetalleFacturas[@i].Subtotal" value="@factura.DetalleFacturas.ElementAt(i).Subtotal" />
+                                        </td>
+                                    </tr>
+                                }
                             }
+                            
                            @*  @foreach (var detalle in factura.DetalleFacturas)
                             {
                                 <tr>
